@@ -72,3 +72,5 @@ git remote add origin https://github.com/LeonardoPCavalcanti/AulasES.git
 git branch -M main
 git push -u origin main
 git commit -m "PrimeiroCommit"
+git pull 
+git pull
