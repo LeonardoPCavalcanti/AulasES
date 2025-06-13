@@ -1,0 +1,269 @@
+[Info  - 12:39:41 PM] 2025/06/02 12:39:41 Created View (#1)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="AdHoc"
+	root_dir="file:///home/leonardo_cavalcanti_136"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:39:41 PM] 2025/06/02 12:39:41 go/packages.Load #1
+	view_id="1"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[./ builtin]
+	packages=2
+	duration=59.703754ms
+
+[Info  - 12:39:41 PM] 2025/06/02 12:39:41 Created View (#2)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="AdHoc"
+	root_dir="file:///home/leonardo_cavalcanti_136/web-service-gin"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:39:41 PM] 2025/06/02 12:39:41 go/packages.Load #2
+	view_id="2"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[./ builtin]
+	packages=2
+	duration=52.801786ms
+
+[Info  - 12:40:11 PM] 2025/06/02 12:40:11 background imports cache refresh starting
+
+[Info  - 12:40:11 PM] 2025/06/02 12:40:11 background refresh finished after 6.234744ms
+
+[Info  - 12:40:21 PM] 2025/06/02 12:40:21 Created View (#3)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="AdHoc"
+	root_dir="file:///home/leonardo_cavalcanti_136/web-service-gin"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:40:21 PM] 2025/06/02 12:40:21 go/packages.Load #3
+	view_id="3"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[./ builtin]
+	packages=2
+	duration=24.745428ms
+
+[Info  - 12:40:51 PM] 2025/06/02 12:40:51 background imports cache refresh starting
+
+[Info  - 12:40:51 PM] 2025/06/02 12:40:51 background refresh finished after 5.556188ms
+
+[Info  - 12:42:35 PM] 2025/06/02 12:42:35 Created View (#4)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="GoMod"
+	root_dir="file:///home/leonardo_cavalcanti_136/web-service-gin"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:42:35 PM] 2025/06/02 12:42:35 go/packages.Load #4
+	view_id="4"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=1
+	duration=57.302335ms
+
+[Info  - 12:43:05 PM] 2025/06/02 12:43:05 background imports cache refresh starting
+
+[Info  - 12:43:05 PM] 2025/06/02 12:43:05 background refresh finished after 28.688069ms
+
+[Info  - 12:43:45 PM] 2025/06/02 12:43:45 go/packages.Load #7
+	view_id="4"
+	snapshot=3
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=26.243315ms
+
+[Info  - 12:43:45 PM] 2025/06/02 12:43:45 go/packages.Load #8
+	view_id="4"
+	snapshot=3
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=27.023807ms
+
+[Info  - 12:44:14 PM] 2025/06/02 12:44:14 go/packages.Load #10
+	view_id="4"
+	snapshot=4
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=303.784489ms
+
+[Info  - 12:44:14 PM] 2025/06/02 12:44:14 go/packages.Load #9
+	view_id="4"
+	snapshot=4
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=514.881894ms
+
+[Error - 12:49:05 PM] Request textDocument/inlayHint failed.
+  Message: getting file for InlayHint: context canceled
+  Code: 0 
+[Error - 12:49:05 PM] Request textDocument/codeAction failed.
+  Message: context canceled
+  Code: 0 
+[Info  - 12:49:10 PM] 2025/06/02 12:49:10 go/packages.Load #11
+	view_id="4"
+	snapshot=62
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=5.794589131s
+
+[Info  - 12:49:12 PM] 2025/06/02 12:49:12 go/packages.Load #14
+	view_id="4"
+	snapshot=62
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=6.297249015s
+
+[Error - 12:49:15 PM] Request textDocument/codeAction failed.
+  Message: context canceled
+  Code: 0 
+[Info  - 12:49:19 PM] 2025/06/02 12:49:19 go/packages.Load #17
+	view_id="4"
+	snapshot=65
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=1
+	duration=5.011191731s
+
+[Info  - 12:49:19 PM] 2025/06/02 12:49:19 go/packages.Load #18
+	view_id="4"
+	snapshot=65
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=4.783868881s
+
+[Info  - 12:49:31 PM] 2025/06/02 12:49:31 go/packages.Load #19
+	view_id="4"
+	snapshot=66
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=2
+	duration=455.566528ms
+
+[Info  - 12:49:32 PM] 2025/06/02 12:49:32 go/packages.Load #20
+	view_id="4"
+	snapshot=67
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=2
+	duration=448.584779ms
+
+[Info  - 12:53:03 PM] 2025/06/02 12:53:03 background imports cache refresh starting
+
+[Info  - 12:53:03 PM] 2025/06/02 12:53:03 background refresh finished after 89.822948ms
+
+[Info  - 1:19:43 PM] 2025/06/02 13:19:43 background imports cache refresh starting
+
+[Info  - 1:19:43 PM] 2025/06/02 13:19:43 background refresh finished after 10.909763ms
+
+[Error - 1:29:30 PM] Request textDocument/definition failed.
+  Message: context canceled
+  Code: 0 
+[Error - 1:29:30 PM] Request textDocument/definition failed.
+  Message: context canceled
+  Code: 0 
+[Info  - 1:29:31 PM] 2025/06/02 13:29:31 go/packages.Load #22
+	view_id="4"
+	snapshot=149
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=358.52222ms
+
+[Info  - 1:29:31 PM] 2025/06/02 13:29:31 go/packages.Load #25
+	view_id="4"
+	snapshot=149
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=335.867218ms
+
+[Info  - 1:33:08 PM] 2025/06/02 13:33:08 go/packages.Load #26
+	view_id="4"
+	snapshot=162
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=303.452191ms
+
+[Info  - 1:33:08 PM] 2025/06/02 13:33:08 go/packages.Load #27
+	view_id="4"
+	snapshot=162
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=294.621479ms
+
+[Info  - 1:34:11 PM] 2025/06/02 13:34:11 background imports cache refresh starting
+
+[Info  - 1:34:11 PM] 2025/06/02 13:34:11 background refresh finished after 3.627318ms
+
+[Info  - 1:34:35 PM] 2025/06/02 13:34:35 go/packages.Load #28
+	view_id="4"
+	snapshot=172
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=286.523615ms
+
+[Info  - 1:34:35 PM] 2025/06/02 13:34:35 go/packages.Load #29
+	view_id="4"
+	snapshot=172
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=281.096177ms
+
+[Error - 1:34:35 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 1:35:04 PM] 2025/06/02 13:35:04 background imports cache refresh starting
+
+[Info  - 1:35:04 PM] 2025/06/02 13:35:04 background refresh finished after 2.916071ms
+
+[Error - 1:35:49 PM] Request textDocument/inlayHint failed.
+  Message: getting file for InlayHint: context canceled
+  Code: 0 
+[Info  - 1:35:50 PM] 2025/06/02 13:35:50 go/packages.Load #32
+	view_id="4"
+	snapshot=178
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=340.814158ms
+
+[Info  - 1:35:50 PM] 2025/06/02 13:35:50 go/packages.Load #33
+	view_id="4"
+	snapshot=178
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=335.701107ms
+
+[Info  - 1:36:19 PM] 2025/06/02 13:36:19 background imports cache refresh starting
+
+[Info  - 1:36:19 PM] 2025/06/02 13:36:19 background refresh finished after 3.135502ms
+

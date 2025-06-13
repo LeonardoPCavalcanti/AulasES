@@ -1,0 +1,91 @@
+2025-06-06 12:11:59.689 [info] Try to start language server - activation (enabled: true)
+2025-06-06 12:12:00.090 [info] Running language server gopls(v0.18.1/go1.24.3)
+2025-06-06 12:13:24.897 [info] Running checks...
+2025-06-06 12:13:24.898 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:13:27.696 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:13:27.696 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:126:6 func updateAlbum is unused (U1000)
+2025-06-06 12:13:27.696 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:146:6 func deleteAlbum is unused (U1000)
+2025-06-06 12:13:27.696 [info] 
+2025-06-06 12:13:36.094 [info] Running checks...
+2025-06-06 12:13:36.094 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:13:36.688 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:13:36.688 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:126:6 func updateAlbum is unused (U1000)
+2025-06-06 12:13:36.688 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:146:6 func deleteAlbum is unused (U1000)
+2025-06-06 12:13:36.688 [info] 
+2025-06-06 12:14:05.005 [info] Running checks...
+2025-06-06 12:14:05.006 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:14:05.863 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:14:05.863 [info] 
+2025-06-06 12:14:07.075 [info] Running checks...
+2025-06-06 12:14:07.075 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:14:07.839 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:14:07.839 [info] 
+2025-06-06 12:16:08.146 [info] Running checks...
+2025-06-06 12:16:08.146 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:16:08.952 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:16:08.952 [info] 
+2025-06-06 12:17:02.702 [info] Running checks...
+2025-06-06 12:17:02.702 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:17:03.273 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:17:03.273 [info] 
+2025-06-06 12:19:55.261 [info] Running checks...
+2025-06-06 12:19:55.261 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:19:56.077 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:19:56.077 [info] 
+2025-06-06 12:19:56.806 [info] Running checks...
+2025-06-06 12:19:56.806 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:19:57.619 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:19:57.619 [info] 
+2025-06-06 12:21:31.922 [info] Running checks...
+2025-06-06 12:21:31.922 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:21:32.712 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:21:32.712 [info] 
+2025-06-06 12:42:30.001 [info] Running checks...
+2025-06-06 12:42:30.002 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:42:30.591 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:42:30.591 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:13:2 "io/ioutil" imported and not used (compile)
+2025-06-06 12:42:30.591 [info] 
+2025-06-06 12:43:27.052 [info] Running checks...
+2025-06-06 12:43:27.052 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:43:27.970 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:43:27.970 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:13:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-06 12:43:27.970 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:102:6 func getLogs is unused (U1000)
+2025-06-06 12:43:27.970 [info] 
+2025-06-06 12:43:32.038 [info] Running checks...
+2025-06-06 12:43:32.039 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:43:32.873 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:43:32.873 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-06 12:43:32.873 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:102:6 func getLogs is unused (U1000)
+2025-06-06 12:43:32.873 [info] 
+2025-06-06 12:44:45.591 [info] Running checks...
+2025-06-06 12:44:45.591 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:44:46.403 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:44:46.403 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-06 12:44:46.403 [info] 
+2025-06-06 12:48:44.727 [info] Running checks...
+2025-06-06 12:48:44.727 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:4:2 "fmt" imported and not used
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:5:2 "log" imported and not used
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:12:2 "time" imported and not used
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:17:6 TestAlbumEndpoints redeclared in this block
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:79:6 TestLoggingMiddleware redeclared in this block
+2025-06-06 12:48:48.732 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-06 12:48:48.732 [info] 
+2025-06-06 12:48:55.097 [info] Running checks...
+2025-06-06 12:48:55.097 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:48:55.711 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:48:55.711 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:14:6 TestAlbumEndpoints redeclared in this block
+2025-06-06 12:48:55.711 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:76:6 TestLoggingMiddleware redeclared in this block
+2025-06-06 12:48:55.711 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-06 12:48:55.711 [info] 
+2025-06-06 12:49:12.921 [info] Running checks...
+2025-06-06 12:49:12.921 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:49:13.499 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:49:13.499 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:1:1 expected 'package', found 'EOF' (compile)
+2025-06-06 12:49:13.499 [info] 
+2025-06-06 12:49:20.054 [info] Running checks...
+2025-06-06 12:49:20.054 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-06 12:49:20.646 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-06 12:49:20.646 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-06 12:49:20.646 [info] 

@@ -1,0 +1,540 @@
+2025-06-09 12:04:37.410 [info] Try to start language server - activation (enabled: true)
+2025-06-09 12:04:37.684 [info] Running language server gopls(v0.18.1/go1.24.3)
+2025-06-09 12:15:41.520 [info] Running checks...
+2025-06-09 12:15:41.520 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:15:42.993 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:15:42.993 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-09 12:15:42.993 [info] 
+2025-06-09 12:15:48.491 [info] Running checks...
+2025-06-09 12:15:48.491 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:15:48.891 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:15:48.891 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-09 12:15:48.891 [info] 
+2025-06-09 12:16:00.433 [info] Running checks...
+2025-06-09 12:16:00.433 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:16:00.862 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:16:00.862 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-09 12:16:00.862 [info] 
+2025-06-09 12:17:15.086 [info] Running checks...
+2025-06-09 12:17:15.086 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:17:16.210 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:17:16.210 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "io/ioutil" has been deprecated since Go 1.19: As of Go 1.16, the same functionality is now provided by package [io] or package [os], and those implementations should be preferred in new code. See the specific function documentation for details.  (SA1019)
+2025-06-09 12:17:16.210 [info] 
+2025-06-09 12:19:18.093 [info] Running checks...
+2025-06-09 12:19:18.093 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:19:18.518 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:19:18.518 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:108:18 undefined: ioutil (compile)
+2025-06-09 12:19:18.518 [info] 
+2025-06-09 12:19:32.501 [info] Running checks...
+2025-06-09 12:19:32.501 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:19:33.100 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:19:33.100 [info] 
+2025-06-09 12:19:34.086 [info] Running checks...
+2025-06-09 12:19:34.086 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:19:34.492 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:19:34.492 [info] 
+2025-06-09 12:23:15.320 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.321 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.321 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.321 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.321 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.321 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.321 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.322 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:15.322 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:23:47.666 [info] Running checks...
+2025-06-09 12:23:47.666 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:12:2 "github.com/dgrijalva/jwt-go" imported as jwt and not used
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:199:28 undefined: testing
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:212:10 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:220:9 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:228:9 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:238:9 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:246:9 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:254:9 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:261:31 undefined: testing
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:275:10 undefined: httptest
+2025-06-09 12:23:48.344 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:12:2 too many errors (compile)
+2025-06-09 12:23:48.344 [info] 
+2025-06-09 12:23:52.294 [info] Running checks...
+2025-06-09 12:23:52.295 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:23:52.712 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:23:52.712 [info] 
+2025-06-09 12:24:09.699 [info] Running checks...
+2025-06-09 12:24:09.699 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:24:10.148 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:24:10.148 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:14:3 "github.com/dgrijalva/jwt-go" imported as jwt and not used (compile)
+2025-06-09 12:24:10.148 [info] 
+2025-06-09 12:24:12.129 [info] Running checks...
+2025-06-09 12:24:12.129 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:24:12.538 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:24:12.538 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:14:2 "github.com/dgrijalva/jwt-go" imported as jwt and not used (compile)
+2025-06-09 12:24:12.538 [info] 
+2025-06-09 12:24:48.265 [info] Running checks...
+2025-06-09 12:24:48.265 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:24:48.920 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:24:48.920 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:47:5 var jwtKey is unused (U1000)
+2025-06-09 12:24:48.920 [info] 
+2025-06-09 12:24:50.013 [info] Running checks...
+2025-06-09 12:24:50.013 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:24:50.618 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:24:50.618 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:47:5 var jwtKey is unused (U1000)
+2025-06-09 12:24:50.618 [info] 
+2025-06-09 12:25:47.824 [info] Running checks...
+2025-06-09 12:25:47.824 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:25:48.229 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:25:48.229 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:71:16 undefined: authMiddleware
+2025-06-09 12:25:48.229 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:73:26 undefined: getProtectedData (compile)
+2025-06-09 12:25:48.229 [info] 
+2025-06-09 12:26:31.247 [info] Running checks...
+2025-06-09 12:26:31.247 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:26:31.837 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:26:31.837 [info] 
+2025-06-09 12:26:33.055 [info] Running checks...
+2025-06-09 12:26:33.055 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:26:33.465 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:26:33.465 [info] 
+2025-06-09 12:28:13.904 [info] Running checks...
+2025-06-09 12:28:13.904 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:28:14.307 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:28:14.307 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:3 "crypto/rand" imported and not used
+2025-06-09 12:28:14.307 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "encoding/base64" imported and not used (compile)
+2025-06-09 12:28:14.307 [info] 
+2025-06-09 12:28:16.271 [info] Running checks...
+2025-06-09 12:28:16.271 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:28:16.681 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:28:16.681 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:2 "crypto/rand" imported and not used
+2025-06-09 12:28:16.681 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "encoding/base64" imported and not used (compile)
+2025-06-09 12:28:16.681 [info] 
+2025-06-09 12:29:34.529 [info] Running checks...
+2025-06-09 12:29:34.529 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:2 "crypto/rand" imported and not used
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:272:28 undefined: testing
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:285:10 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:293:9 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:301:9 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:311:9 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:319:9 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:327:9 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:334:31 undefined: testing
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:348:10 undefined: httptest
+2025-06-09 12:29:34.936 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:2 too many errors (compile)
+2025-06-09 12:29:34.936 [info] 
+2025-06-09 12:31:25.779 [info] Running checks...
+2025-06-09 12:31:25.779 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:31:26.178 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:31:26.179 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:2 "crypto/rand" imported and not used
+2025-06-09 12:31:26.179 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "encoding/base64" imported and not used (compile)
+2025-06-09 12:31:26.179 [info] 
+2025-06-09 12:31:30.481 [info] Running checks...
+2025-06-09 12:31:30.481 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:31:30.907 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:31:30.907 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:2 "crypto/rand" imported and not used
+2025-06-09 12:31:30.907 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "encoding/base64" imported and not used (compile)
+2025-06-09 12:31:30.907 [info] 
+2025-06-09 12:31:33.998 [info] Running checks...
+2025-06-09 12:31:33.999 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:31:34.457 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:31:34.457 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:4:3 "crypto/rand" imported and not used
+2025-06-09 12:31:34.457 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:5:2 "encoding/base64" imported and not used (compile)
+2025-06-09 12:31:34.457 [info] 
+2025-06-09 12:31:35.333 [info] Running checks...
+2025-06-09 12:31:35.333 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:31:35.956 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:31:35.956 [info] 
+2025-06-09 12:31:36.912 [info] Running checks...
+2025-06-09 12:31:36.912 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:31:37.326 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:31:37.326 [info] 
+2025-06-09 12:31:39.207 [info] Running checks...
+2025-06-09 12:31:39.207 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:31:39.629 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:31:39.629 [info] 
+2025-06-09 12:32:35.413 [info] Running checks...
+2025-06-09 12:32:35.413 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:32:35.828 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:32:35.828 [info] 
+2025-06-09 12:32:39.742 [info] Running checks...
+2025-06-09 12:32:39.742 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:32:40.206 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:32:40.206 [info] 
+2025-06-09 12:36:52.293 [info] Running checks...
+2025-06-09 12:36:52.293 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:36:52.912 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:36:52.912 [info] 
+2025-06-09 12:37:33.995 [info] Running checks...
+2025-06-09 12:37:33.995 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:37:34.410 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:37:34.410 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:197:48 too many arguments in call to generateToken
+2025-06-09 12:37:34.410 [info] 
+2025-06-09 12:37:49.259 [info] Running checks...
+2025-06-09 12:37:49.259 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:37:49.668 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:37:49.668 [info] 
+2025-06-09 12:37:59.132 [info] Running checks...
+2025-06-09 12:37:59.132 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:292:28 undefined: testing
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:308:10 undefined: httptest
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:316:9 undefined: httptest
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:326:9 undefined: httptest
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:336:9 undefined: httptest
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:344:9 undefined: httptest
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:351:31 undefined: testing
+2025-06-09 12:37:59.662 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:365:10 undefined: httptest (compile)
+2025-06-09 12:37:59.662 [info] 
+2025-06-09 12:38:01.612 [info] Running checks...
+2025-06-09 12:38:01.612 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:38:02.154 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:38:02.154 [info] 
+2025-06-09 12:38:44.847 [info] Running checks...
+2025-06-09 12:38:44.847 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:38:45.267 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:38:45.267 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:193:32 not enough arguments in call to generateToken
+2025-06-09 12:38:45.267 [info] 
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:08.232 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:40:09.517 [info] Running checks...
+2025-06-09 12:40:09.517 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:40:09.923 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:40:09.923 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:193:32 not enough arguments in call to generateToken
+2025-06-09 12:40:09.923 [info] 
+2025-06-09 12:40:47.853 [info] Running checks...
+2025-06-09 12:40:47.853 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:40:48.250 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:40:48.250 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:80:1 syntax error: non-declaration statement outside function body (compile)
+2025-06-09 12:40:48.250 [info] 
+2025-06-09 12:40:50.849 [info] Running checks...
+2025-06-09 12:40:50.849 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:40:51.261 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:40:51.261 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:193:32 not enough arguments in call to generateToken
+2025-06-09 12:40:51.261 [info] 
+2025-06-09 12:41:19.368 [info] Running checks...
+2025-06-09 12:41:19.368 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:41:19.791 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:41:19.791 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:193:32 not enough arguments in call to generateToken
+2025-06-09 12:41:19.791 [info] 
+2025-06-09 12:43:09.981 [info] Running checks...
+2025-06-09 12:43:09.982 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:43:10.623 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:43:10.623 [info] 
+2025-06-09 12:44:00.672 [info] Running checks...
+2025-06-09 12:44:00.672 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:44:01.323 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:44:01.323 [info] 
+2025-06-09 12:44:06.006 [info] Running checks...
+2025-06-09 12:44:06.006 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:44:06.637 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:44:06.637 [info] 
+2025-06-09 12:44:08.788 [info] Running checks...
+2025-06-09 12:44:08.788 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:44:09.462 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:44:09.462 [info] 
+2025-06-09 12:44:10.716 [info] Running checks...
+2025-06-09 12:44:10.716 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:44:11.362 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:44:11.362 [info] 
+2025-06-09 12:45:03.207 [info] Running checks...
+2025-06-09 12:45:03.207 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:45:03.866 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:45:03.866 [info] 
+2025-06-09 12:46:59.516 [info] Running checks...
+2025-06-09 12:46:59.516 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:46:59.967 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:46:59.967 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:78:16 not enough arguments in call to authMiddleware
+2025-06-09 12:46:59.967 [info] 
+2025-06-09 12:47:01.313 [info] Running checks...
+2025-06-09 12:47:01.313 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:47:01.735 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:47:01.736 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:78:16 not enough arguments in call to authMiddleware
+2025-06-09 12:47:01.736 [info] 
+2025-06-09 12:48:32.921 [info] Running checks...
+2025-06-09 12:48:32.921 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:48:33.565 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:48:33.565 [info] 
+2025-06-09 12:48:34.320 [info] Running checks...
+2025-06-09 12:48:34.320 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:48:34.968 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:48:34.968 [info] 
+2025-06-09 12:51:33.380 [info] Running checks...
+2025-06-09 12:51:33.380 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:51:34.002 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:51:34.002 [info] 
+2025-06-09 12:51:51.710 [info] Running checks...
+2025-06-09 12:51:51.711 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:51:52.343 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:51:52.343 [info] 
+2025-06-09 12:52:40.883 [info] Running checks...
+2025-06-09 12:52:40.883 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:52:41.276 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:52:41.276 [info] 
+2025-06-09 12:55:17.465 [info] Running checks...
+2025-06-09 12:55:17.465 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:55:18.102 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:55:18.102 [info] 
+2025-06-09 12:55:38.069 [info] Running checks...
+2025-06-09 12:55:38.069 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:55:38.525 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:55:38.525 [info] 
+2025-06-09 12:57:57.029 [info] Running checks...
+2025-06-09 12:57:57.029 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:335:3 undefined: json
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:344:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:351:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:358:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:365:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:372:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:380:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:388:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:396:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:404:3 undefined: assert
+2025-06-09 12:57:57.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:404:3 too many errors (compile)
+2025-06-09 12:57:57.425 [info] 
+2025-06-09 12:58:07.269 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.269 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.270 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.270 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.270 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.270 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.270 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:07.270 [info] Failed while handling 'FileSystemWatcher.onDidCreate': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/home/leonardo_cavalcanti_136/gopath/pkg/mod/go.mod'
+2025-06-09 12:58:28.479 [info] Running checks...
+2025-06-09 12:58:28.479 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:58:28.917 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:58:28.917 [info] 
+2025-06-09 12:58:30.158 [info] Running checks...
+2025-06-09 12:58:30.158 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:335:3 undefined: json
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:344:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:351:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:358:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:365:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:372:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:380:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:388:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:396:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:404:3 undefined: assert
+2025-06-09 12:58:30.586 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:404:3 too many errors (compile)
+2025-06-09 12:58:30.586 [info] 
+2025-06-09 12:58:49.928 [info] Running checks...
+2025-06-09 12:58:49.929 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:58:50.378 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:58:50.378 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:336:3 undefined: json
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:345:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:352:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:359:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:366:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:373:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:381:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:389:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:397:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:405:3 undefined: assert
+2025-06-09 12:58:50.379 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:405:3 too many errors (compile)
+2025-06-09 12:58:50.379 [info] 
+2025-06-09 12:58:53.454 [info] Running checks...
+2025-06-09 12:58:53.454 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:336:3 undefined: json
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:345:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:352:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:359:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:366:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:373:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:381:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:389:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:397:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:405:3 undefined: assert
+2025-06-09 12:58:53.857 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:405:3 too many errors (compile)
+2025-06-09 12:58:53.857 [info] 
+2025-06-09 12:59:07.923 [info] Running checks...
+2025-06-09 12:59:07.923 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 12:59:08.341 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 12:59:08.341 [info] 
+2025-06-09 13:01:11.135 [info] Running checks...
+2025-06-09 13:01:11.135 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:01:11.631 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:01:11.631 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:1:1 expected 'package', found 'EOF' (compile)
+2025-06-09 13:01:11.631 [info] 
+2025-06-09 13:01:13.660 [info] Running checks...
+2025-06-09 13:01:13.660 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:01:14.039 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:01:14.039 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:1:1 expected 'package', found 'EOF' (compile)
+2025-06-09 13:01:14.039 [info] 
+2025-06-09 13:01:34.931 [info] Running checks...
+2025-06-09 13:01:34.931 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:01:36.317 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:01:36.317 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:6:2 "fmt" imported and not used
+2025-06-09 13:01:36.317 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:9:2 "strings" imported and not used (compile)
+2025-06-09 13:01:36.317 [info] 
+2025-06-09 13:03:21.927 [info] Running checks...
+2025-06-09 13:03:21.927 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:03:22.864 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:03:22.864 [info] 
+2025-06-09 13:06:31.768 [info] Running checks...
+2025-06-09 13:06:31.769 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:06:32.180 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:06:32.180 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:1:1 expected 'package', found 'import' (compile)
+2025-06-09 13:06:32.180 [info] 
+2025-06-09 13:06:57.530 [info] Running checks...
+2025-06-09 13:06:57.530 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:06:57.960 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:06:57.960 [info] 
+2025-06-09 13:07:14.099 [info] Running checks...
+2025-06-09 13:07:14.099 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:07:14.548 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:07:14.548 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:3:1 syntax error: non-declaration statement outside function body
+2025-06-09 13:07:14.548 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:3:10 more than one character in rune literal (compile)
+2025-06-09 13:07:14.548 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:3:1 expected declaration, found expected (compile)
+2025-06-09 13:07:14.548 [info] 
+2025-06-09 13:07:16.277 [info] Running checks...
+2025-06-09 13:07:16.277 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:07:16.700 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:07:16.701 [info] 
+2025-06-09 13:07:31.876 [info] Running checks...
+2025-06-09 13:07:31.876 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:07:32.330 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:07:32.330 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:14:6 TestAlbumEndpoints redeclared in this block
+2025-06-09 13:07:32.330 [info] 
+2025-06-09 13:07:34.233 [info] Running checks...
+2025-06-09 13:07:34.233 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:07:34.661 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:07:34.661 [info] 
+2025-06-09 13:09:10.686 [info] Running checks...
+2025-06-09 13:09:10.686 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:09:11.147 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:09:11.147 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:34:6 TestAlbumEndpoints redeclared in this block
+2025-06-09 13:09:11.147 [info] 
+2025-06-09 13:09:11.982 [info] Running checks...
+2025-06-09 13:09:11.982 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:09:12.425 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:09:12.425 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:34:6 TestAlbumEndpoints redeclared in this block
+2025-06-09 13:09:12.425 [info] 
+2025-06-09 13:09:44.963 [info] Running checks...
+2025-06-09 13:09:44.963 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:09:45.729 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:09:45.729 [info] 
+2025-06-09 13:09:52.465 [info] Running checks...
+2025-06-09 13:09:52.465 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:09:53.213 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:09:53.213 [info] 
+2025-06-09 13:10:03.223 [info] Running checks...
+2025-06-09 13:10:03.223 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:10:03.661 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:10:03.661 [info] 
+2025-06-09 13:12:16.284 [info] Running checks...
+2025-06-09 13:12:16.284 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:12:16.714 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:12:16.714 [info] 
+2025-06-09 13:12:39.227 [info] Running checks...
+2025-06-09 13:12:39.227 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:12:39.669 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:12:39.669 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:7:2 "net/http/httptest" imported and not used
+2025-06-09 13:12:39.669 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:11:2 "testing" imported and not used (compile)
+2025-06-09 13:12:39.669 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:7:2 "net/http/httptest" imported and not used
+2025-06-09 13:12:39.669 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:11:2 "testing" imported and not used (compile)
+2025-06-09 13:12:39.669 [info] 
+2025-06-09 13:12:52.409 [info] Running checks...
+2025-06-09 13:12:52.409 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:12:52.846 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:12:52.846 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:7:2 "net/http/httptest" imported and not used
+2025-06-09 13:12:52.846 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:11:2 "testing" imported and not used (compile)
+2025-06-09 13:12:52.846 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:121:7 syntax error: unexpected name TestLoggingMiddleware, expected ( (compile)
+2025-06-09 13:12:52.846 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:121:7 expected '(', found TestLoggingMiddleware (compile)
+2025-06-09 13:12:52.846 [info] 
+2025-06-09 13:12:55.052 [info] Running checks...
+2025-06-09 13:12:55.052 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:12:55.518 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:12:55.518 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:7:2 "net/http/httptest" imported and not used
+2025-06-09 13:12:55.518 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:11:2 "testing" imported and not used (compile)
+2025-06-09 13:12:55.518 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:7:2 "net/http/httptest" imported and not used
+2025-06-09 13:12:55.518 [info] /home/leonardo_cavalcanti_136/web-service-gin/main.go:11:2 "testing" imported and not used (compile)
+2025-06-09 13:12:55.518 [info] 
+2025-06-09 13:13:00.256 [info] Running checks...
+2025-06-09 13:13:00.256 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:13:00.695 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:13:00.695 [info] 
+2025-06-09 13:13:01.506 [info] Running checks...
+2025-06-09 13:13:01.507 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:13:02.302 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:13:02.302 [info] 
+2025-06-09 13:13:03.634 [info] Running checks...
+2025-06-09 13:13:03.634 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:13:04.068 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:13:04.068 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:34:6 TestAlbumEndpoints redeclared in this block
+2025-06-09 13:13:04.068 [info] 
+2025-06-09 13:13:08.025 [info] Running checks...
+2025-06-09 13:13:08.025 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:13:08.447 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:13:08.447 [info] 
+2025-06-09 13:14:19.308 [info] Running checks...
+2025-06-09 13:14:19.308 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:14:19.912 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:14:19.912 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:148:16 undefined: os
+2025-06-09 13:14:19.912 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:157:17 undefined: filepath
+2025-06-09 13:14:19.912 [info] /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:158:25 undefined: os (compile)
+2025-06-09 13:14:19.912 [info] 
+2025-06-09 13:14:38.296 [info] Running checks...
+2025-06-09 13:14:38.296 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:14:39.071 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:14:39.071 [info] 
+2025-06-09 13:14:40.598 [info] Running checks...
+2025-06-09 13:14:40.598 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:14:41.289 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:14:41.290 [info] 
+2025-06-09 13:14:43.882 [info] Running checks...
+2025-06-09 13:14:43.882 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:14:44.563 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:14:44.564 [info] 
+2025-06-09 13:27:30.834 [info] Running checks...
+2025-06-09 13:27:30.835 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:27:31.876 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:27:31.876 [info] 
+2025-06-09 13:27:40.724 [info] Running checks...
+2025-06-09 13:27:40.724 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:27:41.539 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:27:41.540 [info] 
+2025-06-09 13:27:43.341 [info] Running checks...
+2025-06-09 13:27:43.342 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:27:43.882 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:27:43.882 [info] 
+2025-06-09 13:28:27.687 [info] Running checks...
+2025-06-09 13:28:27.687 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:28:28.392 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:28:28.392 [info] 
+2025-06-09 13:29:01.431 [info] Running checks...
+2025-06-09 13:29:01.432 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:29:01.861 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:29:01.861 [info] 
+2025-06-09 13:29:04.986 [info] Running checks...
+2025-06-09 13:29:04.986 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:29:05.516 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:29:05.516 [info] 
+2025-06-09 13:30:41.556 [info] Running checks...
+2025-06-09 13:30:41.556 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:30:42.267 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:30:42.267 [info] 
+2025-06-09 13:30:55.354 [info] Running checks...
+2025-06-09 13:30:55.354 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:30:55.913 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:30:55.913 [info] 
+2025-06-09 13:31:00.081 [info] Running checks...
+2025-06-09 13:31:00.081 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:31:00.821 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:31:00.821 [info] 
+2025-06-09 13:31:10.512 [info] Running checks...
+2025-06-09 13:31:10.512 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:31:11.236 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:31:11.236 [info] 
+2025-06-09 13:31:12.950 [info] Running checks...
+2025-06-09 13:31:12.950 [info] Starting linting the current package at /home/leonardo_cavalcanti_136/web-service-gin
+2025-06-09 13:31:13.681 [info] /home/leonardo_cavalcanti_136/web-service-gin>Finished running tool: /google/gopath/bin/staticcheck
+2025-06-09 13:31:13.681 [info] 

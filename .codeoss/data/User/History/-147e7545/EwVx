@@ -1,0 +1,30 @@
+# Use uma imagem base oficial do Go
+FROM golang:1.22-alpine AS builder
+
+# Define o diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copia o arquivo go.mod e go.sum para baixar as dependências
+COPY go.mod go.sum ./
+RUN go mod download
+
+# Copia o restante do código fonte
+COPY . .
+
+# Compila o aplicativo Go
+RUN go build -o main .
+
+# Use uma imagem base mais leve para a execução
+FROM alpine:latest
+
+# Define o diretório de trabalho
+WORKDIR /app
+
+# Copia o binário compilado do estágio anterior
+COPY --from=builder /app/main .
+
+# Expõe a porta que o aplicativo escuta
+EXPOSE 8080
+
+# Comando para executar o aplicativo
+CMD ["./main"]

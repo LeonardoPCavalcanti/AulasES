@@ -1,0 +1,269 @@
+package main
+
+import (
+	"crypto/rand"
+	"encoding/base64"
+	"fmt"
+	"log"
+	"net/http"
+	"os"
+	"path/filepath"
+	"strings"
+	"time"
+
+	"github.com/dgrijalva/jwt-go"
+	"github.com/gin-gonic/gin"
+	"golang.org/x/crypto/bcrypt"
+)
+
+// Album representa os dados de um álbum de música.
+type Album struct {
+	ID     string  `json:"id"`
+	Title  string  `json:"title"`
+	Artist string  `json:"artist"`
+	Price  float64 `json:"price"`
+}
+
+// User representa os dados de um usuário.
+type User struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+// albums é um slice para armazenar os dados dos álbuns.
+var albums = []Album{
+	{ID: "1", Title: "Blue Train", Artist: "John Coltrane", Price: 56.99},
+	{ID: "2", Title: "Jeru", Artist: "Gerry Mulligan", Price: 17.99},
+	{ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaughan", Price: 39.99},
+}
+
+// users é um slice para armazenar os dados dos usuários (em um cenário real, isso estaria em um banco de dados).
+var users = []User{
+	{Username: "admin", Password: hashPassword("password")}, // Senha "password" hasheada
+}
+
+// Claims represents the JWT claims (data).
+type Claims struct {
+	Username string `json:"username"`
+	jwt.StandardClaims
+}
+
+func main() {
+	router := gin.Default()
+
+	// ... (Criação do diretório de logs, middleware de logging - sem mudanças)
+
+	// Rotas
+	router.GET("/albums", getAlbums)
+	router.GET("/albums/:id", getAlbumByID)
+	router.POST("/albums", postAlbums)
+	router.PUT("/albums/:id", updateAlbum)
+	router.DELETE("/albums/:id", deleteAlbum)
+	router.GET("/logs", getLogs)
+	router.POST("/auth", authenticate)
+
+	// Example of a protected route (requires authentication)
+	protected := router.Group("/protected")
+	protected.Use(authMiddleware())
+	{
+		protected.GET("/data", getProtectedData)
+	}
+
+	router.Run("0.0.0.0:8080")
+}
+
+// loggingMiddleware cria um middleware para registrar informações das requisições.
+func loggingMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		start := time.Now()
+		c.Next()
+		latency := time.Since(start)
+
+		logMessage := fmt.Sprintf("[%s] %s %s %d %s",
+			time.Now().Format("2006-01-02 15:04:05"),
+			c.Request.Method,
+			c.Request.RequestURI,
+			c.Writer.Status(),
+			latency,
+		)
+
+		logFilePath := "my-data/logs.txt"
+		if _, err := os.Stat(filepath.Dir(logFilePath)); os.IsNotExist(err) {
+			os.MkdirAll(filepath.Dir(logFilePath), 0755)
+		}
+
+		file, err := os.OpenFile(logFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		if err != nil {
+			log.Println("Erro ao abrir o arquivo de log:", err)
+			return
+		}
+		defer file.Close()
+
+		if _, err := file.WriteString(logMessage + "\n"); err != nil {
+			log.Println("Erro ao escrever no arquivo de log:", err)
+		}
+	}
+}
+
+// getAlbums retorna a lista de todos os álbuns como JSON.
+func getAlbums(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, albums)
+}
+
+// getLogs retorna o conteúdo do arquivo de log como texto plano.
+func getLogs(c *gin.Context) {
+	logFilePath := "my-data/logs.txt"
+	content, err := os.ReadFile(logFilePath) // Alteração aqui
+	if err != nil {
+		c.IndentedJSON(http.StatusInternalServerError, gin.H{"error": "Não foi possível ler o arquivo de log"})
+		return
+	}
+	c.Data(http.StatusOK, "text/plain; charset=utf-8", content)
+}
+
+// postAlbums adiciona um álbum a partir do JSON recebido no corpo da requisição.
+func postAlbums(c *gin.Context) {
+	var newAlbum Album
+	if err := c.BindJSON(&newAlbum); err != nil {
+		return
+	}
+	albums = append(albums, newAlbum)
+	c.IndentedJSON(http.StatusCreated, newAlbum)
+}
+
+// getAlbumByID localiza o álbum cujo ID corresponde ao parâmetro "id".
+func getAlbumByID(c *gin.Context) {
+	id := c.Param("id")
+	for _, a := range albums {
+		if a.ID == id {
+			c.IndentedJSON(http.StatusOK, a)
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "álbum não encontrado"})
+}
+
+// updateAlbum atualiza um álbum existente.
+func updateAlbum(c *gin.Context) {
+	id := c.Param("id")
+	var updatedAlbum Album
+	if err := c.BindJSON(&updatedAlbum); err != nil {
+		return
+	}
+	for i, a := range albums {
+		if a.ID == id {
+			updatedAlbum.ID = id // Garante que o ID permaneça o mesmo
+			albums[i] = updatedAlbum
+			c.IndentedJSON(http.StatusOK, updatedAlbum)
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "álbum não encontrado"})
+}
+
+// deleteAlbum exclui um álbum.
+func deleteAlbum(c *gin.Context) {
+	id := c.Param("id")
+	for i, a := range albums {
+		if a.ID == id {
+			albums = append(albums[:i], albums[i+1:]...)
+			c.IndentedJSON(http.StatusOK, gin.H{"message": "álbum excluído"})
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "álbum não encontrado"})
+}
+
+// authenticate autentica um usuário e retorna um token JWT.
+func authenticate(c *gin.Context) {
+	var creds User
+	if err := c.BindJSON(&creds); err != nil {
+		c.IndentedJSON(http.StatusBadRequest, gin.H{"error": "Formato de credenciais inválido"})
+		return
+	}
+
+	for _, u := range users {
+		if u.Username == creds.Username && checkPasswordHash(creds.Password, u.Password) {
+			token, err := generateToken(creds.Username)
+			if err != nil {
+				c.IndentedJSON(http.StatusInternalServerError, gin.H{"error": "Erro ao gerar o token"})
+				return
+			}
+			c.IndentedJSON(http.StatusOK, gin.H{"token": token})
+			return
+		}
+	}
+
+	c.IndentedJSON(http.StatusUnauthorized, gin.H{"error": "Nome de usuário ou senha inválidos"})
+}
+
+// generateToken gera um token JWT para o nome de usuário fornecido.
+func generateToken(username string) (string, error) {
+	expirationTime := time.Now().Add(24 * time.Hour) // Token expires in 24 hours
+	claims := &Claims{
+		Username: username,
+		StandardClaims: jwt.StandardClaims{
+			ExpiresAt: expirationTime.Unix(),
+		},
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+	jwtKey := []byte(os.Getenv("JWT_SECRET_KEY"))
+	tokenString, err := token.SignedString(jwtKey)
+	if err != nil {
+		return "", err
+	}
+
+	return tokenString, nil
+}
+
+// authMiddleware creates a middleware to protect routes.
+func authMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		tokenStr := c.GetHeader("Authorization")
+		if tokenStr == "" {
+			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"error": "Authorization header missing"})
+			return
+		}
+
+		// Extract the token from the "Bearer <token>" format
+		splitToken := strings.Split(tokenStr, " ")
+		if len(splitToken) != 2 || splitToken[0] != "Bearer" {
+			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"error": "Invalid token format"})
+			return
+		}
+		tokenStr = splitToken[1]
+
+		claims := &Claims{}
+		jwtKey := []byte(os.Getenv("JWT_SECRET_KEY"))
+		token, err := jwt.ParseWithClaims(tokenStr, claims, func(token *jwt.Token) (interface{}, error) {
+			return jwtKey, nil
+		})
+
+		if err != nil || !token.Valid {
+			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+			return
+		}
+
+		c.Set("username", claims.Username) // Store username in context
+		c.Next()
+	}
+}
+
+// getProtectedData is an example of a protected route.
+func getProtectedData(c *gin.Context) {
+	username := c.GetString("username")
+	c.IndentedJSON(http.StatusOK, gin.H{"message": fmt.Sprintf("Hello, %s! This is protected data.", username)})
+}
+
+// hashPassword gera um hash seguro para a senha.
+func hashPassword(password string) string {
+	hashed, _ := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
+	return string(hashed)
+}
+
+// checkPasswordHash compara uma senha com seu hash.
+func checkPasswordHash(password, hash string) bool {
+	err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(password))
+	return err == nil
+}

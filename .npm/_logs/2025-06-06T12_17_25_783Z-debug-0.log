@@ -1,0 +1,18 @@
+0 verbose cli /usr/local/nvm/versions/node/v22.16.0/bin/node /usr/local/nvm/versions/node/v22.16.0/bin/npm
+1 info using npm@11.4.1
+2 info using node@v22.16.0
+3 silly config load:file:/usr/local/nvm/versions/node/v22.16.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/leonardo_cavalcanti_136/web-service-gin/.npmrc
+5 silly config load:file:/home/leonardo_cavalcanti_136/.npmrc
+6 silly config load:file:/usr/local/nvm/versions/node/v22.16.0/etc/npmrc
+7 verbose title npm config get prefix
+8 verbose argv "config" "--loglevel" "warn" "get" "prefix"
+9 verbose logfile logs-max:10 dir:/home/leonardo_cavalcanti_136/.npm/_logs/2025-06-06T12_17_25_783Z-
+10 verbose logfile /home/leonardo_cavalcanti_136/.npm/_logs/2025-06-06T12_17_25_783Z-debug-0.log
+11 silly logfile start cleaning logs, removing 2 files
+12 verbose cwd /home/leonardo_cavalcanti_136/web-service-gin
+13 verbose os Linux 6.6.87+
+14 verbose node v22.16.0
+15 verbose npm  v11.4.1
+16 verbose exit 0
+17 info ok

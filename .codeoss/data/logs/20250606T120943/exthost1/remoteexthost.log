@@ -1,0 +1,50 @@
+2025-06-06 12:09:53.757 [info] Extension host with pid 1223 started
+2025-06-06 12:09:53.757 [error] Error: EEXIST: file already exists, open '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock'
+2025-06-06 12:09:53.809 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-06-06 12:09:53.811 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': The pid 1274 appears to be gone.
+2025-06-06 12:09:53.811 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Deleting a stale lock.
+2025-06-06 12:09:53.822 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Lock acquired.
+2025-06-06 12:09:53.953 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-06-06 12:09:53.954 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-06 12:09:53.955 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-06 12:09:53.955 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-06 12:09:54.738 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-06-06 12:09:54.932 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-06-06 12:09:54.933 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-06-06 12:09:55.677 [info] Eager extensions activated
+2025-06-06 12:09:55.678 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-06-06 12:09:55.679 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-06-06 12:09:55.679 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-06-06 12:09:55.680 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-06-06 12:09:55.681 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-06-06 12:09:57.923 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-06-06 12:10:00.226 [error] onWillSaveTextDocument-listener from extension 'EditorConfig.EditorConfig' threw ERROR
+2025-06-06 12:10:00.233 [error] Error: timeout
+    at Timeout._onTimeout (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:137:99781)
+    at listOnTimeout (node:internal/timers:581:17)
+    at processTimers (node:internal/timers:519:7)
+2025-06-06 12:11:58.560 [info] ExtensionService#_doActivateExtension golang.go, startup: false, activationEvent: 'onLanguage:go'
+2025-06-06 12:42:29.153 [error] [golang.go] provider FAILED
+2025-06-06 12:42:29.203 [error] Error: getting file for InlayHint: context canceled
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-06 12:48:54.002 [warning] google.geminicodeassist - Code actions of kind 'source.organizeImports' requested but returned code action is of kind 'quickfix'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-06-06 12:48:54.002 [warning] google.geminicodeassist - Code actions of kind 'source.organizeImports' requested but returned code action is of kind 'quickfix'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-06-06 12:48:54.002 [warning] google.geminicodeassist - Code actions of kind 'source.organizeImports' requested but returned code action is of kind 'quickfix'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-06-06 12:48:54.002 [warning] google.geminicodeassist - Code actions of kind 'source.organizeImports' requested but returned code action is of kind 'quickfix'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-06-06 12:48:54.002 [warning] google.geminicodeassist - Code actions of kind 'source.organizeImports' requested but returned code action is of kind 'quickfix'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-06-06 12:49:11.877 [error] [golang.go] provider FAILED
+2025-06-06 12:49:11.878 [error] Error: getting file for InlayHint: context canceled
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-06 13:10:11.834 [error] unauthorized. cloudshell.authorize {"value":"google.cloud-shell","_lower":"google.cloud-shell"}
+2025-06-06 13:10:12.838 [error] Error: Error calling Cloud Shell Theia Authorization. undefined
+    at t.CloudShellTheiaAuth.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/common/packages/cloudshell/authorization.ts:73:13)
+    at Generator.throw (<anonymous>)
+    at i (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/common/packages/citation/index.ts:14:1)

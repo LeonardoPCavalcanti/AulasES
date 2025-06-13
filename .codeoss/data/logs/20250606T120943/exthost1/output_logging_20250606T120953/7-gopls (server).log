@@ -1,0 +1,206 @@
+[Info  - 12:12:00 PM] 2025/06/06 12:12:00 Created View (#1)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="AdHoc"
+	root_dir="file:///home/leonardo_cavalcanti_136"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:12:00 PM] 2025/06/06 12:12:00 go/packages.Load #1
+	view_id="1"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[./ builtin]
+	packages=2
+	duration=34.128763ms
+
+[Info  - 12:12:00 PM] 2025/06/06 12:12:00 Created View (#2)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="GoMod"
+	root_dir="file:///home/leonardo_cavalcanti_136/web-service-gin"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:12:04 PM] 2025/06/06 12:12:04 go/packages.Load #2
+	view_id="2"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=2
+	duration=4.051540966s
+
+[Info  - 12:12:30 PM] 2025/06/06 12:12:30 background imports cache refresh starting
+
+[Info  - 12:12:30 PM] 2025/06/06 12:12:30 background refresh finished after 6.209918ms
+
+[Info  - 12:12:30 PM] 2025/06/06 12:12:30 background imports cache refresh starting
+
+[Info  - 12:12:34 PM] 2025/06/06 12:12:34 background refresh finished after 4.014034861s
+
+[Info  - 12:16:45 PM] 2025/06/06 12:16:45 background imports cache refresh starting
+
+[Info  - 12:16:45 PM] 2025/06/06 12:16:45 background refresh finished after 5.049928ms
+
+[Info  - 12:17:31 PM] 2025/06/06 12:17:31 background imports cache refresh starting
+
+[Info  - 12:17:31 PM] 2025/06/06 12:17:31 background refresh finished after 11.727232ms
+
+[Info  - 12:19:47 PM] 2025/06/06 12:19:47 background imports cache refresh starting
+
+[Info  - 12:19:48 PM] 2025/06/06 12:19:48 background refresh finished after 3.760788ms
+
+[Info  - 12:42:29 PM] 2025/06/06 12:42:29 go/packages.Load #3
+	view_id="2"
+	snapshot=48
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=716.574544ms
+
+[Error - 12:42:29 PM] Request textDocument/inlayHint failed.
+  Message: getting file for InlayHint: context canceled
+  Code: 0 
+[Info  - 12:42:59 PM] 2025/06/06 12:42:59 background imports cache refresh starting
+
+[Info  - 12:42:59 PM] 2025/06/06 12:42:59 background refresh finished after 7.919065ms
+
+[Info  - 12:43:34 PM] 2025/06/06 12:43:34 background imports cache refresh starting
+
+[Info  - 12:43:34 PM] 2025/06/06 12:43:34 background refresh finished after 4.087498ms
+
+[Info  - 12:44:06 PM] 2025/06/06 12:44:06 background imports cache refresh starting
+
+[Info  - 12:44:06 PM] 2025/06/06 12:44:06 background refresh finished after 4.27134ms
+
+[Info  - 12:45:13 PM] 2025/06/06 12:45:13 background imports cache refresh starting
+
+[Info  - 12:45:13 PM] 2025/06/06 12:45:13 background refresh finished after 3.796079ms
+
+[Info  - 12:48:38 PM] 2025/06/06 12:48:38 go/packages.Load #5
+	view_id="2"
+	snapshot=68
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=775.914634ms
+
+[Info  - 12:48:38 PM] 2025/06/06 12:48:38 go/packages.Load #6
+	view_id="2"
+	snapshot=68
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=762.465658ms
+
+[Info  - 12:48:40 PM] 2025/06/06 12:48:40 go/packages.Load #7
+	view_id="2"
+	snapshot=68
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=349.472492ms
+
+[Info  - 12:48:42 PM] 2025/06/06 12:48:42 go/packages.Load #8
+	view_id="2"
+	snapshot=69
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=796.065703ms
+
+[Info  - 12:48:42 PM] 2025/06/06 12:48:42 go/packages.Load #9
+	view_id="2"
+	snapshot=69
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=805.338698ms
+
+[Info  - 12:48:43 PM] 2025/06/06 12:48:43 go/packages.Load #10
+	view_id="2"
+	snapshot=69
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=388.990607ms
+
+[Info  - 12:48:55 PM] 2025/06/06 12:48:55 go/packages.Load #12
+	view_id="2"
+	snapshot=72
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=805.21563ms
+
+[Info  - 12:48:55 PM] 2025/06/06 12:48:55 go/packages.Load #11
+	view_id="2"
+	snapshot=72
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=826.733988ms
+
+[Info  - 12:49:11 PM] 2025/06/06 12:49:11 go/packages.Load #13
+	view_id="2"
+	snapshot=76
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=846.569851ms
+
+[Info  - 12:49:11 PM] 2025/06/06 12:49:11 go/packages.Load #14
+	view_id="2"
+	snapshot=76
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=875.155193ms
+
+[Error - 12:49:11 PM] Request textDocument/inlayHint failed.
+  Message: getting file for InlayHint: context canceled
+  Code: 0 
+[Info  - 12:49:12 PM] 2025/06/06 12:49:12 go/packages.Load #15
+	view_id="2"
+	snapshot=77
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=567.348655ms
+
+[Info  - 12:49:12 PM] 2025/06/06 12:49:12 go/packages.Load #17
+	view_id="2"
+	snapshot=77
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=487.180207ms
+
+[Info  - 12:49:15 PM] 2025/06/06 12:49:15 go/packages.Load #19
+	view_id="2"
+	snapshot=81
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=348.002911ms
+
+[Info  - 12:49:16 PM] 2025/06/06 12:49:16 go/packages.Load #20
+	view_id="2"
+	snapshot=82
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=1
+	duration=327.378406ms
+
+[Info  - 12:49:23 PM] 2025/06/06 12:49:23 background imports cache refresh starting
+
+[Info  - 12:49:23 PM] 2025/06/06 12:49:23 background refresh finished after 4.11455ms
+
+[Info  - 12:50:17 PM] 2025/06/06 12:50:17 background imports cache refresh starting
+
+[Info  - 12:50:17 PM] 2025/06/06 12:50:17 background refresh finished after 4.762501ms
+

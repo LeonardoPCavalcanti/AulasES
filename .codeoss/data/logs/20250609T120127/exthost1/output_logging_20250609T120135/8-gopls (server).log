@@ -1,0 +1,874 @@
+[Info  - 12:04:37 PM] 2025/06/09 12:04:37 Created View (#1)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="AdHoc"
+	root_dir="file:///home/leonardo_cavalcanti_136"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:04:37 PM] 2025/06/09 12:04:37 go/packages.Load #1
+	view_id="1"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[./ builtin]
+	packages=2
+	duration=30.274774ms
+
+[Info  - 12:04:37 PM] 2025/06/09 12:04:37 Created View (#2)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="GoMod"
+	root_dir="file:///home/leonardo_cavalcanti_136/web-service-gin"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:04:42 PM] 2025/06/09 12:04:42 go/packages.Load #2
+	view_id="2"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=2
+	duration=4.302413284s
+
+[Info  - 12:05:07 PM] 2025/06/09 12:05:07 background imports cache refresh starting
+
+[Info  - 12:05:07 PM] 2025/06/09 12:05:07 background refresh finished after 5.69986ms
+
+[Info  - 12:05:07 PM] 2025/06/09 12:05:07 background imports cache refresh starting
+
+[Info  - 12:05:11 PM] 2025/06/09 12:05:11 background refresh finished after 3.595842629s
+
+[Info  - 12:15:45 PM] 2025/06/09 12:15:45 background imports cache refresh starting
+
+[Info  - 12:15:45 PM] 2025/06/09 12:15:45 background refresh finished after 6.008687ms
+
+[Info  - 12:16:28 PM] 2025/06/09 12:16:28 background imports cache refresh starting
+
+[Info  - 12:16:28 PM] 2025/06/09 12:16:28 background refresh finished after 2.446059ms
+
+[Info  - 12:17:13 PM] 2025/06/09 12:17:13 go/packages.Load #3
+	view_id="2"
+	snapshot=14
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=452.880664ms
+
+[Info  - 12:17:13 PM] 2025/06/09 12:17:13 go/packages.Load #4
+	view_id="2"
+	snapshot=14
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=392.601782ms
+
+[Error - 12:17:21 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:17:40 PM] 2025/06/09 12:17:40 background imports cache refresh starting
+
+[Info  - 12:17:40 PM] 2025/06/09 12:17:40 background refresh finished after 4.213161ms
+
+[Error - 12:17:46 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:18:38 PM] 2025/06/09 12:18:38 background imports cache refresh starting
+
+[Info  - 12:18:38 PM] 2025/06/09 12:18:38 background refresh finished after 2.739075ms
+
+[Info  - 12:19:16 PM] 2025/06/09 12:19:16 go/packages.Load #5
+	view_id="2"
+	snapshot=18
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=303.702993ms
+
+[Info  - 12:19:16 PM] 2025/06/09 12:19:16 go/packages.Load #6
+	view_id="2"
+	snapshot=18
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=292.234793ms
+
+[Error - 12:19:16 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Error - 12:19:19 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:19:30 PM] 2025/06/09 12:19:30 background imports cache refresh starting
+
+[Info  - 12:19:30 PM] 2025/06/09 12:19:30 background refresh finished after 3.282717ms
+
+[Error - 12:19:31 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Error - 12:19:40 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Error - 12:19:40 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:20:00 PM] 2025/06/09 12:20:00 background imports cache refresh starting
+
+[Info  - 12:20:00 PM] 2025/06/09 12:20:00 background refresh finished after 4.573647ms
+
+[Error - 12:22:34 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:23:16 PM] 2025/06/09 12:23:16 go/packages.Load #7
+	view_id="2"
+	snapshot=28
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=2
+	duration=236.698882ms
+
+[Info  - 12:23:46 PM] 2025/06/09 12:23:46 go/packages.Load #8
+	view_id="2"
+	snapshot=29
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=319.659552ms
+
+[Info  - 12:23:46 PM] 2025/06/09 12:23:46 go/packages.Load #9
+	view_id="2"
+	snapshot=29
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=310.626939ms
+
+[Info  - 12:23:50 PM] 2025/06/09 12:23:50 go/packages.Load #10
+	view_id="2"
+	snapshot=33
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=278.954569ms
+
+[Info  - 12:23:51 PM] 2025/06/09 12:23:51 go/packages.Load #11
+	view_id="2"
+	snapshot=33
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=261.160015ms
+
+[Info  - 12:24:08 PM] 2025/06/09 12:24:08 go/packages.Load #12
+	view_id="2"
+	snapshot=38
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=247.670046ms
+
+[Info  - 12:24:38 PM] 2025/06/09 12:24:38 background imports cache refresh starting
+
+[Info  - 12:24:38 PM] 2025/06/09 12:24:38 background refresh finished after 6.088373ms
+
+[Info  - 12:25:22 PM] 2025/06/09 12:25:22 background imports cache refresh starting
+
+[Info  - 12:25:22 PM] 2025/06/09 12:25:22 background refresh finished after 4.159846ms
+
+[Error - 12:26:36 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:27:02 PM] 2025/06/09 12:27:02 background imports cache refresh starting
+
+[Info  - 12:27:02 PM] 2025/06/09 12:27:02 background refresh finished after 3.083552ms
+
+[Info  - 12:28:12 PM] 2025/06/09 12:28:12 go/packages.Load #13
+	view_id="2"
+	snapshot=65
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=344.814199ms
+
+[Info  - 12:28:12 PM] 2025/06/09 12:28:12 go/packages.Load #14
+	view_id="2"
+	snapshot=65
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=323.038163ms
+
+[Info  - 12:28:42 PM] 2025/06/09 12:28:42 background imports cache refresh starting
+
+[Info  - 12:28:42 PM] 2025/06/09 12:28:42 background refresh finished after 3.168605ms
+
+[Info  - 12:29:33 PM] 2025/06/09 12:29:33 go/packages.Load #15
+	view_id="2"
+	snapshot=73
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=370.828943ms
+
+[Info  - 12:29:33 PM] 2025/06/09 12:29:33 go/packages.Load #16
+	view_id="2"
+	snapshot=73
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=339.725442ms
+
+[Error - 12:29:38 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:30:02 PM] 2025/06/09 12:30:02 background imports cache refresh starting
+
+[Info  - 12:30:02 PM] 2025/06/09 12:30:02 background refresh finished after 3.390913ms
+
+[Info  - 12:30:39 PM] 2025/06/09 12:30:39 background imports cache refresh starting
+
+[Info  - 12:30:39 PM] 2025/06/09 12:30:39 background refresh finished after 4.030467ms
+
+[Info  - 12:31:30 PM] 2025/06/09 12:31:30 go/packages.Load #17
+	view_id="2"
+	snapshot=82
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=436.172042ms
+
+[Info  - 12:31:30 PM] 2025/06/09 12:31:30 go/packages.Load #18
+	view_id="2"
+	snapshot=82
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=372.869155ms
+
+[Info  - 12:31:33 PM] 2025/06/09 12:31:33 go/packages.Load #19
+	view_id="2"
+	snapshot=87
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=280.045429ms
+
+[Info  - 12:31:34 PM] 2025/06/09 12:31:34 go/packages.Load #20
+	view_id="2"
+	snapshot=87
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=349.999451ms
+
+[Error - 12:31:34 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Error - 12:31:35 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:31:53 PM] 2025/06/09 12:31:53 background imports cache refresh starting
+
+[Info  - 12:31:53 PM] 2025/06/09 12:31:53 background refresh finished after 3.822716ms
+
+[Info  - 12:33:00 PM] 2025/06/09 12:33:00 background imports cache refresh starting
+
+[Info  - 12:33:00 PM] 2025/06/09 12:33:00 background refresh finished after 4.242196ms
+
+[Info  - 12:37:57 PM] 2025/06/09 12:37:57 go/packages.Load #21
+	view_id="2"
+	snapshot=118
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=391.99885ms
+
+[Info  - 12:37:58 PM] 2025/06/09 12:37:58 go/packages.Load #22
+	view_id="2"
+	snapshot=118
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=422.520621ms
+
+[Info  - 12:38:00 PM] 2025/06/09 12:38:00 go/packages.Load #23
+	view_id="2"
+	snapshot=122
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=476.824165ms
+
+[Info  - 12:38:00 PM] 2025/06/09 12:38:00 go/packages.Load #24
+	view_id="2"
+	snapshot=122
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=394.857945ms
+
+[Info  - 12:38:01 PM] 2025/06/09 12:38:01 background imports cache refresh starting
+
+[Info  - 12:38:01 PM] 2025/06/09 12:38:01 background refresh finished after 5.441299ms
+
+[Error - 12:38:02 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Error - 12:38:07 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:38:45 PM] 2025/06/09 12:38:45 background imports cache refresh starting
+
+[Info  - 12:38:45 PM] 2025/06/09 12:38:45 background refresh finished after 3.492426ms
+
+[Info  - 12:39:15 PM] 2025/06/09 12:39:15 background imports cache refresh starting
+
+[Info  - 12:39:15 PM] 2025/06/09 12:39:15 background refresh finished after 3.355551ms
+
+[Info  - 12:40:07 PM] 2025/06/09 12:40:07 Created View (#3)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="GoMod"
+	root_dir="file:///home/leonardo_cavalcanti_136/gopath/pkg/mod/github.com/gin-gonic/gin@v1.10.1"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:40:08 PM] 2025/06/09 12:40:08 go/packages.Load #25
+	view_id="3"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/gopath/pkg/mod/github.com/gin-gonic/gin@v1.10.1/... builtin]
+	packages=15
+	duration=713.701796ms
+
+[Info  - 12:40:34 PM] 2025/06/09 12:40:34 background imports cache refresh starting
+
+[Info  - 12:40:34 PM] 2025/06/09 12:40:34 background refresh finished after 3.314931ms
+
+[Info  - 12:41:13 PM] 2025/06/09 12:41:13 Created View (#4)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="GoMod"
+	root_dir="file:///home/leonardo_cavalcanti_136/gopath/pkg/mod/github.com/gin-gonic/gin@v1.10.1"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 12:41:13 PM] 2025/06/09 12:41:13 go/packages.Load #27
+	view_id="4"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/gopath/pkg/mod/github.com/gin-gonic/gin@v1.10.1/... builtin]
+	packages=15
+	duration=319.180987ms
+
+[Info  - 12:41:14 PM] 2025/06/09 12:41:14 background imports cache refresh starting
+
+[Info  - 12:41:14 PM] 2025/06/09 12:41:14 background refresh finished after 3.649006ms
+
+[Error - 12:41:23 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:41:45 PM] 2025/06/09 12:41:45 background imports cache refresh starting
+
+[Info  - 12:41:45 PM] 2025/06/09 12:41:45 background refresh finished after 3.029149ms
+
+[Info  - 12:43:36 PM] 2025/06/09 12:43:36 background imports cache refresh starting
+
+[Info  - 12:43:36 PM] 2025/06/09 12:43:36 background refresh finished after 3.096014ms
+
+[Info  - 12:44:27 PM] 2025/06/09 12:44:27 background imports cache refresh starting
+
+[Info  - 12:44:27 PM] 2025/06/09 12:44:27 background refresh finished after 3.833068ms
+
+[Info  - 12:45:31 PM] 2025/06/09 12:45:31 background imports cache refresh starting
+
+[Info  - 12:45:31 PM] 2025/06/09 12:45:31 background refresh finished after 3.531724ms
+
+[Info  - 12:46:13 PM] 2025/06/09 12:46:13 background imports cache refresh starting
+
+[Info  - 12:46:13 PM] 2025/06/09 12:46:13 background refresh finished after 3.308989ms
+
+[Info  - 12:46:47 PM] 2025/06/09 12:46:47 background imports cache refresh starting
+
+[Info  - 12:46:47 PM] 2025/06/09 12:46:47 background refresh finished after 3.816512ms
+
+[Error - 12:47:03 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:47:23 PM] 2025/06/09 12:47:23 background imports cache refresh starting
+
+[Info  - 12:47:23 PM] 2025/06/09 12:47:23 background refresh finished after 4.460022ms
+
+[Error - 12:48:34 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 12:48:52 PM] 2025/06/09 12:48:52 background imports cache refresh starting
+
+[Info  - 12:48:52 PM] 2025/06/09 12:48:52 background refresh finished after 3.276621ms
+
+[Info  - 12:49:34 PM] 2025/06/09 12:49:34 background imports cache refresh starting
+
+[Info  - 12:49:34 PM] 2025/06/09 12:49:34 background refresh finished after 3.472117ms
+
+[Info  - 12:52:00 PM] 2025/06/09 12:52:00 background imports cache refresh starting
+
+[Info  - 12:52:00 PM] 2025/06/09 12:52:00 background refresh finished after 3.087112ms
+
+[Error - 12:52:14 PM] Request textDocument/hover failed.
+  Message: re-parsing declaration of AbortWithStatusJSON: context canceled
+  Code: 0 
+[Info  - 12:52:36 PM] 2025/06/09 12:52:36 background imports cache refresh starting
+
+[Info  - 12:52:36 PM] 2025/06/09 12:52:36 background refresh finished after 3.346179ms
+
+[Info  - 12:53:07 PM] 2025/06/09 12:53:07 background imports cache refresh starting
+
+[Info  - 12:53:07 PM] 2025/06/09 12:53:07 background refresh finished after 3.272719ms
+
+[Info  - 12:55:42 PM] 2025/06/09 12:55:42 background imports cache refresh starting
+
+[Info  - 12:55:42 PM] 2025/06/09 12:55:42 background refresh finished after 3.386501ms
+
+[Info  - 12:57:55 PM] 2025/06/09 12:57:55 background imports cache refresh starting
+
+[Info  - 12:57:55 PM] 2025/06/09 12:57:55 background refresh finished after 3.429809ms
+
+[Info  - 12:58:08 PM] 2025/06/09 12:58:08 go/packages.Load #29
+	view_id="2"
+	snapshot=228
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/web-service-gin/... builtin]
+	packages=2
+	duration=320.208541ms
+
+[Info  - 12:58:08 PM] 2025/06/09 12:58:08 go/packages.Load #30
+	view_id="2"
+	snapshot=228
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=1
+	duration=403.807003ms
+
+[Info  - 12:58:57 PM] 2025/06/09 12:58:57 background imports cache refresh starting
+
+[Info  - 12:58:57 PM] 2025/06/09 12:58:57 background refresh finished after 5.6109ms
+
+[Info  - 12:59:36 PM] 2025/06/09 12:59:36 background imports cache refresh starting
+
+[Info  - 12:59:36 PM] 2025/06/09 12:59:36 background refresh finished after 3.207081ms
+
+[Info  - 12:59:49 PM] 2025/06/09 12:59:49 go/packages.Load #31
+	view_id="2"
+	snapshot=255
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=450.322097ms
+
+[Info  - 12:59:49 PM] 2025/06/09 12:59:49 go/packages.Load #32
+	view_id="2"
+	snapshot=255
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=438.28567ms
+
+[Info  - 12:59:51 PM] 2025/06/09 12:59:51 go/packages.Load #33
+	view_id="2"
+	snapshot=255
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=239.505846ms
+
+[Error - 12:59:54 PM] 2025/06/09 12:59:54 imports fixes: allImportsFixes: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:1:1: expected ';', found 'EOF' (and 2 more errors)
+	file="/home/leonardo_cavalcanti_136/web-service-gin/main_test.go"
+
+[Info  - 1:00:24 PM] 2025/06/09 13:00:24 go/packages.Load #34
+	view_id="2"
+	snapshot=258
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/test.go]
+	packages=1
+	duration=413.795078ms
+
+[Info  - 1:00:24 PM] 2025/06/09 13:00:24 go/packages.Load #35
+	view_id="2"
+	snapshot=258
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/test.go]
+	packages=1
+	duration=423.85335ms
+
+[Info  - 1:00:25 PM] 2025/06/09 13:00:25 go/packages.Load #36
+	view_id="2"
+	snapshot=258
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=1
+	duration=247.406498ms
+
+[Error - 1:00:30 PM] 2025/06/09 13:00:30 imports fixes: allImportsFixes: /home/leonardo_cavalcanti_136/web-service-gin/test.go:1:1: expected ';', found 'EOF' (and 2 more errors)
+	file="/home/leonardo_cavalcanti_136/web-service-gin/test.go"
+
+[Error - 1:00:32 PM] Request textDocument/codeAction failed.
+  Message: column is beyond end of line
+  Code: 0 
+[Info  - 1:00:45 PM] 2025/06/09 13:00:45 go/packages.Load #38
+	view_id="2"
+	snapshot=261
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=420.30844ms
+
+[Info  - 1:00:45 PM] 2025/06/09 13:00:45 go/packages.Load #37
+	view_id="2"
+	snapshot=261
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=441.249027ms
+
+[Info  - 1:00:47 PM] 2025/06/09 13:00:47 go/packages.Load #39
+	view_id="2"
+	snapshot=261
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=250.903611ms
+
+[Error - 1:00:47 PM] 2025/06/09 13:00:47 imports fixes: allImportsFixes: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go:1:1: expected ';', found 'EOF' (and 2 more errors)
+	file="/home/leonardo_cavalcanti_136/web-service-gin/main_test.go"
+
+[Info  - 1:01:12 PM] 2025/06/09 13:01:12 go/packages.Load #40
+	view_id="2"
+	snapshot=268
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=2
+	duration=240.361144ms
+
+[Info  - 1:01:33 PM] 2025/06/09 13:01:33 go/packages.Load #42
+	view_id="2"
+	snapshot=272
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=456.163961ms
+
+[Info  - 1:01:33 PM] 2025/06/09 13:01:33 go/packages.Load #41
+	view_id="2"
+	snapshot=272
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=464.680723ms
+
+[Info  - 1:01:36 PM] 2025/06/09 13:01:36 go/packages.Load #43
+	view_id="2"
+	snapshot=275
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=255.43124ms
+
+[Info  - 1:02:04 PM] 2025/06/09 13:02:04 background imports cache refresh starting
+
+[Info  - 1:02:04 PM] 2025/06/09 13:02:04 background refresh finished after 3.146684ms
+
+[Info  - 1:02:39 PM] 2025/06/09 13:02:39 background imports cache refresh starting
+
+[Info  - 1:02:39 PM] 2025/06/09 13:02:39 background refresh finished after 3.409891ms
+
+[Info  - 1:03:17 PM] 2025/06/09 13:03:17 background imports cache refresh starting
+
+[Info  - 1:03:17 PM] 2025/06/09 13:03:17 background refresh finished after 3.521895ms
+
+[Info  - 1:03:20 PM] 2025/06/09 13:03:20 go/packages.Load #45
+	view_id="2"
+	snapshot=276
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=400.874337ms
+
+[Info  - 1:03:20 PM] 2025/06/09 13:03:20 go/packages.Load #44
+	view_id="2"
+	snapshot=276
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=413.134137ms
+
+[Info  - 1:03:48 PM] 2025/06/09 13:03:48 background imports cache refresh starting
+
+[Info  - 1:03:48 PM] 2025/06/09 13:03:48 background refresh finished after 3.144053ms
+
+[Info  - 1:06:30 PM] 2025/06/09 13:06:30 go/packages.Load #46
+	view_id="2"
+	snapshot=280
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=467.67581ms
+
+[Info  - 1:06:30 PM] 2025/06/09 13:06:30 go/packages.Load #47
+	view_id="2"
+	snapshot=280
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=402.883388ms
+
+[Info  - 1:06:33 PM] 2025/06/09 13:06:33 go/packages.Load #49
+	view_id="2"
+	snapshot=283
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=239.459711ms
+
+[Error - 1:06:38 PM] 2025/06/09 13:06:38 imports fixes: allImportsFixes: importPrefix: failed to parse: 1:1: expected 'package', found 'import' (and 1 more errors)
+	file="/home/leonardo_cavalcanti_136/web-service-gin/main_test.go"
+
+[Info  - 1:06:56 PM] 2025/06/09 13:06:56 go/packages.Load #50
+	view_id="2"
+	snapshot=284
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=523.41957ms
+
+[Info  - 1:06:56 PM] 2025/06/09 13:06:56 go/packages.Load #51
+	view_id="2"
+	snapshot=284
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=530.833588ms
+
+[Info  - 1:06:59 PM] 2025/06/09 13:06:59 go/packages.Load #53
+	view_id="2"
+	snapshot=287
+	directory=/home/leonardo_cavalcanti_136
+	query=[example.com/web-service-gin]
+	packages=3
+	duration=242.839576ms
+
+[Info  - 1:07:12 PM] 2025/06/09 13:07:12 go/packages.Load #54
+	view_id="2"
+	snapshot=288
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=305.497259ms
+
+[Info  - 1:07:12 PM] 2025/06/09 13:07:12 go/packages.Load #55
+	view_id="2"
+	snapshot=288
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=293.806422ms
+
+[Info  - 1:07:15 PM] 2025/06/09 13:07:15 go/packages.Load #56
+	view_id="2"
+	snapshot=291
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=430.422493ms
+
+[Info  - 1:07:15 PM] 2025/06/09 13:07:15 go/packages.Load #57
+	view_id="2"
+	snapshot=291
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=427.06589ms
+
+[Info  - 1:07:26 PM] 2025/06/09 13:07:26 background imports cache refresh starting
+
+[Info  - 1:07:26 PM] 2025/06/09 13:07:26 background refresh finished after 3.533594ms
+
+[Info  - 1:07:30 PM] 2025/06/09 13:07:30 go/packages.Load #59
+	view_id="2"
+	snapshot=296
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=414.849941ms
+
+[Info  - 1:07:30 PM] 2025/06/09 13:07:30 go/packages.Load #58
+	view_id="2"
+	snapshot=296
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=434.099287ms
+
+[Info  - 1:07:32 PM] 2025/06/09 13:07:32 go/packages.Load #60
+	view_id="2"
+	snapshot=300
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=436.462299ms
+
+[Info  - 1:07:32 PM] 2025/06/09 13:07:32 go/packages.Load #61
+	view_id="2"
+	snapshot=300
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=438.979666ms
+
+[Info  - 1:07:59 PM] 2025/06/09 13:07:59 background imports cache refresh starting
+
+[Info  - 1:07:59 PM] 2025/06/09 13:07:59 background refresh finished after 3.828069ms
+
+[Info  - 1:09:09 PM] 2025/06/09 13:09:09 go/packages.Load #63
+	view_id="2"
+	snapshot=304
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=406.946996ms
+
+[Info  - 1:09:09 PM] 2025/06/09 13:09:09 go/packages.Load #62
+	view_id="2"
+	snapshot=304
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=418.793443ms
+
+[Info  - 1:09:36 PM] 2025/06/09 13:09:36 background imports cache refresh starting
+
+[Info  - 1:09:36 PM] 2025/06/09 13:09:36 background refresh finished after 3.155007ms
+
+[Info  - 1:10:08 PM] 2025/06/09 13:10:08 background imports cache refresh starting
+
+[Info  - 1:10:08 PM] 2025/06/09 13:10:08 background refresh finished after 3.42635ms
+
+[Info  - 1:13:33 PM] 2025/06/09 13:13:33 background imports cache refresh starting
+
+[Info  - 1:13:33 PM] 2025/06/09 13:13:33 background refresh finished after 3.684588ms
+
+[Info  - 1:13:38 PM] 2025/06/09 13:13:38 Created View (#5)
+	directory=/home/leonardo_cavalcanti_136
+	view_type="GoMod"
+	root_dir="file:///home/leonardo_cavalcanti_136/gopath/pkg/mod/github.com/gin-gonic/gin@v1.10.1"
+	go_version="go version go1.24.3 linux/amd64"
+	build_flags=[]
+	env={GOOS:linux GOARCH:amd64 GOCACHE:/home/leonardo_cavalcanti_136/.cache/go-build GOMODCACHE:/home/leonardo_cavalcanti_136/gopath/pkg/mod GOPATH:/home/leonardo_cavalcanti_136/gopath:/google/gopath GOPRIVATE: GOFLAGS: GO111MODULE: GOTOOLCHAIN:auto GOROOT:/usr/local/go GoVersion:24 GoVersionOutput:go version go1.24.3 linux/amd64
+ ExplicitGOWORK: EffectiveGOPACKAGESDRIVER:}
+	env_overlay=[]
+
+[Info  - 1:13:38 PM] 2025/06/09 13:13:38 go/packages.Load #64
+	view_id="5"
+	snapshot=0
+	directory=/home/leonardo_cavalcanti_136
+	query=[/home/leonardo_cavalcanti_136/gopath/pkg/mod/github.com/gin-gonic/gin@v1.10.1/... builtin]
+	packages=15
+	duration=297.252786ms
+
+[Info  - 1:14:10 PM] 2025/06/09 13:14:10 go/packages.Load #66
+	view_id="2"
+	snapshot=385
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=2
+	duration=425.62462ms
+
+[Info  - 1:14:10 PM] 2025/06/09 13:14:10 go/packages.Load #67
+	view_id="2"
+	snapshot=385
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=2
+	duration=387.09513ms
+
+[Info  - 1:14:17 PM] 2025/06/09 13:14:17 go/packages.Load #68
+	view_id="2"
+	snapshot=390
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=2
+	duration=261.201198ms
+
+[Info  - 1:14:18 PM] 2025/06/09 13:14:18 go/packages.Load #69
+	view_id="2"
+	snapshot=390
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main.go]
+	packages=2
+	duration=266.780618ms
+
+[Info  - 1:14:37 PM] 2025/06/09 13:14:37 go/packages.Load #71
+	view_id="2"
+	snapshot=400
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=443.429255ms
+
+[Info  - 1:14:37 PM] 2025/06/09 13:14:37 go/packages.Load #70
+	view_id="2"
+	snapshot=400
+	directory=/home/leonardo_cavalcanti_136
+	query=[file=/home/leonardo_cavalcanti_136/web-service-gin/main_test.go]
+	packages=1
+	duration=448.756485ms
+
+[Info  - 1:14:38 PM] 2025/06/09 13:14:38 background imports cache refresh starting
+
+[Info  - 1:14:38 PM] 2025/06/09 13:14:38 background refresh finished after 4.111538ms
+
+[Info  - 1:15:09 PM] 2025/06/09 13:15:09 background imports cache refresh starting
+
+[Info  - 1:15:09 PM] 2025/06/09 13:15:09 background refresh finished after 3.250116ms
+
+[Info  - 1:20:20 PM] 2025/06/09 13:20:20 background imports cache refresh starting
+
+[Info  - 1:20:20 PM] 2025/06/09 13:20:20 background refresh finished after 3.40582ms
+
+[Info  - 1:21:48 PM] 2025/06/09 13:21:48 background imports cache refresh starting
+
+[Info  - 1:21:48 PM] 2025/06/09 13:21:48 background refresh finished after 4.421044ms
+
+[Info  - 1:26:50 PM] 2025/06/09 13:26:50 background imports cache refresh starting
+
+[Info  - 1:26:50 PM] 2025/06/09 13:26:50 background refresh finished after 4.627122ms
+
+[Info  - 1:27:57 PM] 2025/06/09 13:27:57 background imports cache refresh starting
+
+[Info  - 1:27:57 PM] 2025/06/09 13:27:57 background refresh finished after 3.645477ms
+
+[Info  - 1:28:55 PM] 2025/06/09 13:28:55 background imports cache refresh starting
+
+[Info  - 1:28:55 PM] 2025/06/09 13:28:55 background refresh finished after 4.678621ms
+
+[Info  - 1:29:29 PM] 2025/06/09 13:29:29 background imports cache refresh starting
+
+[Info  - 1:29:29 PM] 2025/06/09 13:29:29 background refresh finished after 4.925085ms
+
+[Info  - 1:31:08 PM] 2025/06/09 13:31:08 background imports cache refresh starting
+
+[Info  - 1:31:08 PM] 2025/06/09 13:31:08 background refresh finished after 3.212037ms
+
+[Info  - 1:31:38 PM] 2025/06/09 13:31:38 background imports cache refresh starting
+
+[Info  - 1:31:38 PM] 2025/06/09 13:31:38 background refresh finished after 3.614907ms
+
+[Info  - 1:36:35 PM] 2025/06/09 13:36:35 Shutdown session
+	shutdown_session=1
+

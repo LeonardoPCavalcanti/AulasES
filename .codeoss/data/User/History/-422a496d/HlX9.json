@@ -1,0 +1,12 @@
+{
+    "window.menuBarVisibility": "classic",
+    "window.commandCenter": true,
+    "http.proxySupport": "off",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "redhat.telemetry.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.autoDetectColorScheme": true,
+    "geminicodeassist.project": "cloudshell-gca",
+    "terminal.integrated.defaultProfile.linux": "Google Cloud Shell",
+    "terminal.integrated.sendKeybindingsToShell": true
+}

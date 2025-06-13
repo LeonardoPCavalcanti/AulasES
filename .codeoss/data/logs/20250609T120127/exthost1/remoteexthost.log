@@ -1,0 +1,169 @@
+2025-06-09 12:01:35.289 [info] Extension host with pid 1248 started
+2025-06-09 12:01:35.289 [error] Error: EEXIST: file already exists, open '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock'
+2025-06-09 12:01:35.301 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-06-09 12:01:35.304 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': The pid 1223 appears to be gone.
+2025-06-09 12:01:35.304 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Deleting a stale lock.
+2025-06-09 12:01:35.355 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Lock acquired.
+2025-06-09 12:01:35.486 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-06-09 12:01:35.487 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-09 12:01:35.488 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-09 12:01:35.488 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-06-09 12:01:36.125 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-06-09 12:01:36.308 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-06-09 12:01:36.308 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-06-09 12:01:36.905 [info] Eager extensions activated
+2025-06-09 12:01:36.905 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-06-09 12:01:36.906 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-06-09 12:01:36.907 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-06-09 12:01:36.907 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-06-09 12:01:36.908 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-06-09 12:01:38.931 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-06-09 12:01:41.128 [error] onWillSaveTextDocument-listener from extension 'EditorConfig.EditorConfig' threw ERROR
+2025-06-09 12:01:41.134 [error] Error: timeout
+    at Timeout._onTimeout (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:137:99781)
+    at listOnTimeout (node:internal/timers:581:17)
+    at processTimers (node:internal/timers:519:7)
+2025-06-09 12:04:36.450 [info] ExtensionService#_doActivateExtension golang.go, startup: false, activationEvent: 'onLanguage:go'
+2025-06-09 12:17:21.607 [error] [golang.go] provider FAILED
+2025-06-09 12:17:21.621 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:17:46.672 [error] [golang.go] provider FAILED
+2025-06-09 12:17:46.673 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:19:16.870 [error] [golang.go] provider FAILED
+2025-06-09 12:19:16.871 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:19:19.689 [error] [golang.go] provider FAILED
+2025-06-09 12:19:19.690 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:19:31.063 [error] [golang.go] provider FAILED
+2025-06-09 12:19:31.064 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:19:40.052 [error] [golang.go] provider FAILED
+2025-06-09 12:19:40.052 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:19:40.062 [error] [golang.go] provider FAILED
+2025-06-09 12:19:40.062 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:22:34.898 [error] [golang.go] provider FAILED
+2025-06-09 12:22:34.898 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:26:36.626 [error] [golang.go] provider FAILED
+2025-06-09 12:26:36.627 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:29:38.516 [error] [golang.go] provider FAILED
+2025-06-09 12:29:38.517 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:31:34.253 [error] [golang.go] provider FAILED
+2025-06-09 12:31:34.253 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:31:35.582 [error] [golang.go] provider FAILED
+2025-06-09 12:31:35.582 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:38:02.937 [error] [golang.go] provider FAILED
+2025-06-09 12:38:02.937 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:38:07.035 [error] [golang.go] provider FAILED
+2025-06-09 12:38:07.035 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:41:23.295 [error] [golang.go] provider FAILED
+2025-06-09 12:41:23.295 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:47:03.908 [error] [golang.go] provider FAILED
+2025-06-09 12:47:03.909 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:48:34.040 [error] [golang.go] provider FAILED
+2025-06-09 12:48:34.041 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 12:52:14.958 [error] [golang.go] provider FAILED
+2025-06-09 12:52:14.958 [error] Error: re-parsing declaration of AbortWithStatusJSON: context canceled
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 13:00:32.809 [error] [golang.go] provider FAILED
+2025-06-09 13:00:32.809 [error] Error: column is beyond end of line
+    at handleResponse (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8606:40)
+    at handleMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8416:11)
+    at processMessageQueue (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8431:13)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/golang.Go/dist/goMain.js:8407:11)
+    at processImmediate (node:internal/timers:483:21)
+2025-06-09 13:02:02.525 [error] Error: Tool with identifier docs already registered.
+    at a.register (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/src/ai-companion/gemini_tool_service.ts:24:13)
+    at forEach (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/src/ai-companion/ai_language_client.ts:317:58)
+    at Array.forEach (<anonymous>)
+    at t.AILanguageClient.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/src/ai-companion/ai_language_client.ts:317:25)
+    at Generator.next (<anonymous>)
+    at s (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/src/ai-companion/ai_document_context.ts:90:3)
+2025-06-09 13:36:35.948 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-06-09 13:36:35.949 [info] Lock '/home/leonardo_cavalcanti_136/.codeoss/data/User/workspaceStorage/3ebc6ca4/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-06-09 13:36:35.985 [info] Extension host with pid 1248 exiting with code 0

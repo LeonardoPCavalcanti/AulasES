@@ -1,0 +1,422 @@
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+album.
+func deleteAlbum(c *gin.Context) {
+	id := c.Param("id")
+
+	for i, a := range albums {
+		if a.ID == id {
+			albums = append(albums[:i], albums[i+1:]...)
+			c.Inden
+```
+ from 'https://github.com/shiva-bandari/gin_api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+albums[i+1:]...)
+			c.IndentedJSON(http.StatusOK, gin.H{"message": "album deleted"})
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "al
+```
+ from 'https://github.com/erica7dev/go-apirestfull-with-gin-7dev' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+album.
+func deleteAlbum(c *gin.Context) {
+	id := c.Param("id")
+
+	for i, a := range albums {
+		if a.ID == id {
+			albums = append(albums[:i], albums[i+1:]...)
+			c.Inden
+```
+ from 'https://github.com/shiva-bandari/gin_api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+albums[i+1:]...)
+			c.IndentedJSON(http.StatusOK, gin.H{"message": "album deleted"})
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "al
+```
+ from 'https://github.com/erica7dev/go-apirestfull-with-gin-7dev' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+lbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.Statu
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+m))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+album.
+func deleteAlbum(c *gin.Context) {
+	id := c.Param("id")
+
+	for i, a := range albums {
+		if a.ID == id {
+			albums = append(albums[:i], albums[i+1:]...)
+			c.Inden
+```
+ from 'https://github.com/shiva-bandari/gin_api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+albums[i+1:]...)
+			c.IndentedJSON(http.StatusOK, gin.H{"message": "album deleted"})
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "al
+```
+ from 'https://github.com/erica7dev/go-apirestfull-with-gin-7dev' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+lbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.Statu
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+m))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:19:53: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:36, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+album.
+func deleteAlbum(c *gin.Context) {
+	id := c.Param("id")
+
+	for i, a := range albums {
+		if a.ID == id {
+			albums = append(albums[:i], albums[i+1:]...)
+			c.Inden
+```
+ from 'https://github.com/shiva-bandari/gin_api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+albums[i+1:]...)
+			c.IndentedJSON(http.StatusOK, gin.H{"message": "album deleted"})
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "al
+```
+ from 'https://github.com/erica7dev/go-apirestfull-with-gin-7dev' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+lbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.Statu
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+m))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:19:53: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:36, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with cited text 
+```
+lbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.Statu
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with cited text 
+```
+m))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+

@@ -1,0 +1,72 @@
+2025-06-13 12:11:10.639 [info] [main] Log level: Info
+2025-06-13 12:11:10.639 [info] [main] Validating found git in: "git"
+2025-06-13 12:11:10.639 [info] [main] Using git "2.43.0" from "git"
+2025-06-13 12:11:10.639 [info] [Model][doInitialScan] Initial repository scan started
+2025-06-13 12:11:10.639 [info] > git rev-parse --show-toplevel [5ms]
+2025-06-13 12:11:10.639 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.639 [info] > git rev-parse --show-toplevel [30ms]
+2025-06-13 12:11:10.639 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.639 [info] > git rev-parse --show-toplevel [8ms]
+2025-06-13 12:11:10.639 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.639 [info] > git rev-parse --show-toplevel [3ms]
+2025-06-13 12:11:10.639 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.663 [info] > git rev-parse --show-toplevel [17ms]
+2025-06-13 12:11:10.664 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.675 [info] > git rev-parse --show-toplevel [4ms]
+2025-06-13 12:11:10.675 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.681 [info] > git rev-parse --show-toplevel [3ms]
+2025-06-13 12:11:10.681 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.687 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-13 12:11:10.687 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.703 [info] > git rev-parse --show-toplevel [9ms]
+2025-06-13 12:11:10.703 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:11:10.704 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-06-13 12:11:15.606 [info] > git rev-parse --show-toplevel [4ms]
+2025-06-13 12:11:15.606 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:12:18.535 [info] > git rev-parse --show-toplevel [11ms]
+2025-06-13 12:12:18.535 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-06-13 12:21:33.471 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-13 12:21:33.500 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-06-13 12:21:33.516 [info] [Model][openRepository] Opened repository: /home/leonardo_cavalcanti_136
+2025-06-13 12:21:33.537 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-13 12:21:33.538 [info] > git config --get commit.template [11ms]
+2025-06-13 12:21:33.539 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-06-13 12:21:33.540 [warning] [Git][getBranch] No such branch: master
+2025-06-13 12:21:33.563 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-06-13 12:21:35.886 [info] > git status -z -uall [2337ms] (cancelled)
+2025-06-13 12:21:35.886 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1953ms]
+2025-06-13 12:21:35.886 [warning] [Git][getBranch] No such branch: master
+2025-06-13 12:21:35.891 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-06-13 12:21:36.013 [info] > git config --get commit.template [178ms]
+2025-06-13 12:21:36.016 [info] > git check-ignore -v -z --stdin [14ms]
+2025-06-13 12:21:36.067 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-13 12:21:36.077 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2025-06-13 12:21:36.077 [warning] [Git][getBranch] No such branch: master
+2025-06-13 12:21:36.140 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-06-13 12:21:36.928 [info] > git status -z -uall [828ms] (cancelled)
+2025-06-13 12:21:38.623 [info] > git show --textconv :web-service-gin/main.go [43ms]
+2025-06-13 12:21:38.624 [info] > git ls-files --stage -- web-service-gin/main.go [35ms]
+2025-06-13 12:21:38.655 [info] > git hash-object -t tree /dev/null [17ms]
+2025-06-13 12:21:38.656 [warning] [GitFileSystemProvider][stat] File not found - git:/home/leonardo_cavalcanti_136/web-service-gin/main.go.git?%7B%22path%22%3A%22%2Fhome%2Fleonardo_cavalcanti_136%2Fweb-service-gin%2Fmain.go%22%2C%22ref%22%3A%22%22%7D
+2025-06-13 12:21:38.674 [info] > git hash-object -t tree /dev/null [22ms]
+2025-06-13 12:21:38.674 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/leonardo_cavalcanti_136/web-service-gin/main.go.git?%7B%22path%22%3A%22%2Fhome%2Fleonardo_cavalcanti_136%2Fweb-service-gin%2Fmain.go%22%2C%22ref%22%3A%22%22%7D
+2025-06-13 12:22:14.331 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [25ms]
+2025-06-13 12:22:14.332 [info] fatal: bad revision 'refs/heads/master'
+2025-06-13 12:22:14.332 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/master"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/master'\n"
+}
+2025-06-13 12:22:14.825 [info] > git check-ignore -v -z --stdin [2ms]
