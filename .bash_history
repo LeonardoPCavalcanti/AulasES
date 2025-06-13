@@ -74,3 +74,5 @@ git push -u origin main
 git commit -m "PrimeiroCommit"
 git pull 
 git pull
+mkdir -p .github/workflows
+touch .github/workflows/ci.yml
