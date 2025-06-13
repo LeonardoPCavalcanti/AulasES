@@ -65,3 +65,10 @@ git add .
 git config --global user.name "LeonardoPCavalcanti"
 git config --global user.email "leozinhopcavalcanti@hotmail.com"
 git config --global --list
+git remote add origin <https://github.com/LeonardoPCavalcanti/AulasES.git>
+git remote add origin https://github.com/LeonardoPCavalcanti/AulasES.git
+git push -u origin main
+git remote add origin https://github.com/LeonardoPCavalcanti/AulasES.git
+git branch -M main
+git push -u origin main
+git commit -m "PrimeiroCommit"

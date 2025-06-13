@@ -42,3 +42,6 @@
 
 [Info  - 12:12:52 PM] 2025/06/13 12:12:52 background refresh finished after 3.090637748s
 
+[Info  - 12:31:03 PM] 2025/06/13 12:31:03 Shutdown session
+	shutdown_session=1
+

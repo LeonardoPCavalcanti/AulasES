@@ -1,0 +1,505 @@
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+album.
+func deleteAlbum(c *gin.Context) {
+	id := c.Param("id")
+
+	for i, a := range albums {
+		if a.ID == id {
+			albums = append(albums[:i], albums[i+1:]...)
+			c.Inden
+```
+ from 'https://github.com/shiva-bandari/gin_api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:13:23: Accepted generated code with cited text 
+```
+albums[i+1:]...)
+			c.IndentedJSON(http.StatusOK, gin.H{"message": "album deleted"})
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "al
+```
+ from 'https://github.com/erica7dev/go-apirestfull-with-gin-7dev' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:124, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+lbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.Statu
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with cited text 
+```
+m))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:16:06: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:160, Col:0
+
+2025-06-06 12:19:53: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:36, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with cited text 
+```
+lbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.Statu
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with cited text 
+```
+m))
+	req.Header.Set("Content-Type", "application/json")
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusCreated {
+		t.Errorf("POST /albums failed, expected %d, got %d", http.StatusCreated, resp.Code)
+	}
+
+	// Test GET all
+	req, _ = http.NewRequest("GET", "/albums", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test GET by ID
+	req, _ = http.NewRequest("GET", "/albums/4", nil)
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK {
+		t.Errorf("GET /albums/4 failed, expected %d, got %d", http.StatusOK, resp.Code)
+	}
+
+	// Test PUT
+	updatedAlbum := `{"title": "Kind of Blue (Deluxe)", "artist": "Miles Davis", "price": 59.99}`
+	req, _ = http.NewRequest("PUT", "/albums/4", strings.NewReader(updatedAlbum))
+	req.Header.Set("Content-Type", "application/json")
+	resp = httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+	if resp.Code != http.StatusOK
+```
+ from 'https://github.com/tochti/hrr' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-06 12:48:41: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-09 12:17:13: Accepted generated code with cited text 
+```
+// hashPassword gera um hash seguro para a senha.
+func hashPassword(password string) string {
+	hashed, _ := bcrypt.GenerateFromPassword([]byt
+```
+ from 'https://github.com/AntonioTrupac/SaaS' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:178, Col:55
+
+2025-06-09 12:17:14: Accepted generated code with cited text 
+```
+s dos álbuns.
+var albums = []Album{
+	{ID: "1", Title: "Blue Train", Artist: "John Coltrane", Price: 56.99},
+	{ID: "2", Title: "Jeru", Artist: "Gerry Mulligan", Price: 17.99},
+	{ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaugha
+```
+ from 'https://github.com/golang/tour' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:18, Col:1
+
+2025-06-09 12:17:14: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:18, Col:1
+
+2025-06-09 12:19:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:105, Col:0
+
+2025-06-09 12:25:46: Accepted generated code with cited text 
+```
+- sem mudanças)
+
+	// Rotas
+	router.GET("/albums", getAlbums)
+	router.GET("/albums/:id", getAlbumByID)
+	router.POST("/albums", postAlbums)
+	router.PUT("/albums/:id", updateAlbum)
+	router.DELETE("/al
+```
+ from 'https://github.com/RafaelBarbosa09/web-service-gin-golang' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:54, Col:0
+
+2025-06-09 12:25:46: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:54, Col:0
+
+2025-06-09 12:26:29: Accepted generated code with cited text 
+```
+otect routes.
+func authMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		tokenStr := c.GetHeader("Authorization")
+		if tokenStr == "" {
+			c.AbortWithStatusJSO
+```
+ from 'https://github.com/sufferingCoders/QuenC-Backend' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:180, Col:0
+
+2025-06-09 12:26:29: Accepted generated code with cited text 
+```
+n
+		}
+		tokenStr = splitToken[1]
+
+		claims := &Claims{}
+		token, err := jwt.ParseWithClaims(tokenStr, claims, func(token *jwt.Token) (interface{}, error) {
+```
+ from 'https://github.com/grapheo12/gotodo' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:180, Col:0
+
+2025-06-09 12:26:29: Accepted generated code with cited text 
+```
+s in 24 hours
+	claims := &Claims{
+		Username: username,
+		StandardClaims: jwt.StandardClaims{
+			ExpiresAt: expirationTime.Unix(),
+		},
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+	toke
+```
+ from 'https://codewithmukesh.com/blog/jwt-authentication-in-golang/' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:180, Col:0
+
+2025-06-09 12:26:29: Accepted generated code with cited text 
+```
+t: expirationTime.Unix(),
+		},
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+	tokenString, err := token.SignedString(jwtKey)
+	if err != nil 
+```
+ from 'https://github.com/1017401841/whjFirstDemo' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:180, Col:0
+
+2025-06-09 12:26:29: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:180, Col:0
+
+2025-06-09 12:31:28: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:269, Col:0
+
+2025-06-09 12:40:46: Accepted generated code with cited text 
+```
+- sem mudanças)
+
+	// Rotas
+	router.GET("/albums", getAlbums)
+	router.GET("/albums/:id", getAlbumByID)
+	router.POST("/albums", postAlbums)
+	router.PUT("/albums/:id", updateAlbum)
+	router.DELETE("/al
+```
+ from 'https://github.com/RafaelBarbosa09/web-service-gin-golang' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:56, Col:0
+
+2025-06-09 12:40:46: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:56, Col:0
+
+2025-06-09 12:41:17: Accepted generated code with cited text 
+```
+otect routes.
+func authMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		tokenStr := c.GetHeader("Authorization")
+		if tokenStr == "" {
+			c.AbortWithStatusJSO
+```
+ from 'https://github.com/sufferingCoders/QuenC-Backend' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:225, Col:0
+
+2025-06-09 12:41:17: Accepted generated code with cited text 
+```
+n
+		}
+		tokenStr = splitToken[1]
+
+		claims := &Claims{}
+		token, err := jwt.ParseWithClaims(tokenStr, claims, func(token *jwt.Token) (interface{}, error) {
+```
+ from 'https://github.com/grapheo12/gotodo' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:225, Col:0
+
+2025-06-09 12:46:57: Accepted generated code with cited text 
+```
+n
+		}
+		tokenStr = splitToken[1]
+
+		claims := &Claims{}
+		token, err := jwt.ParseWithClaims(tokenStr, claims, func(token *jwt.Token) (interface{}, error) {
+```
+ from 'https://github.com/grapheo12/gotodo' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:230, Col:0
+
+2025-06-09 12:46:57: Accepted generated code with cited text 
+```
+dRole string) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		tokenStr := c.GetHeader("Authorization")
+		if tokenStr == "" {
+			c.AbortWithStatusJSON(http.StatusUnauthori
+```
+ from 'https://github.com/sufferingCoders/QuenC-Backend' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:230, Col:0
+
+2025-06-09 12:46:57: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:230, Col:0
+
+2025-06-09 12:48:31: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:55, Col:0
+
+2025-06-09 12:48:31: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:55, Col:0
+
+2025-06-09 12:57:55: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:296, Col:0
+
+2025-06-09 12:58:28: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main.go, InsertPosition: Ln:296, Col:0
+
+2025-06-09 13:01:33: Accepted generated code with cited text 
+```
+dentials)
+	req, _ := http.NewRequest("POST", "/auth", bytes.NewBuffer(jsonValue))
+	req.Header.Set("Content-Type", "application/json")
+
+	w := httptest.NewReco
+```
+ from 'https://github.com/Andreasmalleus/go-rest-api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-09 13:01:33: Accepted generated code with cited text 
+```
+.Marshal(invalidCredentials)
+	req, _ = http.NewRequest("POST", "/auth", bytes.NewBuffer(jsonValue))
+	req.Header.Set("Content-Type", "application/j
+```
+ from 'https://github.com/Kurozzu/test-agrak' with License: 'mit'
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-09 13:01:33: Accepted generated code with cited text 
+```
+package main
+
+import (
+	"bytes"
+	"encoding/json"
+	"fmt"
+	"net/http"
+	"net/http/httptest"
+	"strings"
+	"testing"
+
+	"github.com/gin-gonic/gin"
+	"github.com/stretchr/t
+```
+ from 'https://github.com/steveadams/wordgame' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-09 13:01:33: Accepted generated code with cited text 
+```
+r(jsonValue))
+	req.Header.Set("Content-Type", "application/json")
+
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
+
+	assert.Equal(t, http.StatusOK, w.
+```
+ from 'https://github.com/Andreasmalleus/go-rest-api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-09 13:01:33: Accepted generated code with cited text 
+```
+h", bytes.NewBuffer(jsonValue))
+	req.Header.Set("Content-Type", "application/json")
+
+	w = httptest.NewRecorder()
+	router.ServeHTTP(w, req)
+
+	asser
+```
+ from 'https://github.com/Kurozzu/test-agrak' with License: 'mit'
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:0, Col:0
+
+2025-06-09 13:06:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:34, Col:5
+
+2025-06-09 13:07:14: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:30: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:07:32: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with cited text 
+```
+es.NewBuffer(jsonValue))
+		req.Header.Set("Content-Type", "application/json")
+		w := httptest.NewRecorder()
+		router.ServeHTTP(w, req)
+		assert.Equal(t, http.S
+```
+ from 'https://github.com/Andreasmalleus/go-rest-api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with cited text 
+```
+on"
+	"net/http"
+	"net/http/httptest"
+	"strings"
+	"testing"
+
+	"github.com/gin-gonic/gin"
+	"github.com/stretchr/testify/assert"
+)
+
+func setupRouter() *gin
+```
+ from 'https://github.com/PQITADMIN/auth.local.api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with cited text 
+```
+st"
+	"strings"
+	"testing"
+
+	"github.com/gin-gonic/gin"
+	"github.com/stretchr/testify/assert"
+)
+
+func setupRouter() *gin.Engine {
+	router := gin
+```
+ from 'https://github.com/chaochao1221/estate_api' with an unknown license
+TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main_test.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+
+2025-06-09 13:09:08: Accepted generated code with a RAG citation from repo -  and Filepath: /home/leonardo_cavalcanti_136/web-service-gin/main.go for TextDocument: file:///home/leonardo_cavalcanti_136/web-service-gin/main_test.go, InsertPosition: Ln:2, Col:0
+

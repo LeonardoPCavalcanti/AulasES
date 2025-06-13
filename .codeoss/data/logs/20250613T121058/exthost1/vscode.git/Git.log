@@ -123,3 +123,10 @@ fatal: no email was given and auto-detection is disabled
 2025-06-13 12:28:01.543 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
 2025-06-13 12:28:01.638 [info] > git status -z -uall [145ms]
 2025-06-13 12:28:18.504 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [18822ms]
+2025-06-13 12:28:23.041 [info] > git add -A -- . [550ms]
+2025-06-13 12:28:24.427 [info] > git show --textconv :.git/COMMIT_EDITMSG [27ms]
+2025-06-13 12:28:24.430 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/leonardo_cavalcanti_136/.git/COMMIT_EDITMSG.git?%7B%22path%22%3A%22%2Fhome%2Fleonardo_cavalcanti_136%2F.git%2FCOMMIT_EDITMSG%22%2C%22ref%22%3A%22%22%7D
+2025-06-13 12:28:24.436 [info] > git ls-files --stage -- .git/COMMIT_EDITMSG [16ms]
+2025-06-13 12:28:24.437 [warning] [GitFileSystemProvider][stat] File not found - git:/home/leonardo_cavalcanti_136/.git/COMMIT_EDITMSG.git?%7B%22path%22%3A%22%2Fhome%2Fleonardo_cavalcanti_136%2F.git%2FCOMMIT_EDITMSG%22%2C%22ref%22%3A%22%22%7D
+2025-06-13 12:28:24.632 [info] > git check-ignore -v -z --stdin [52ms]
+2025-06-13 12:30:57.618 [info] > git check-ignore -v -z --stdin [10ms]
