@@ -22,3 +22,5 @@
 2025-06-13 12:12:18.387 [info] ExtensionService#_doActivateExtension golang.go, startup: false, activationEvent: 'onLanguage:go'
 2025-06-13 12:21:33.903 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
 2025-06-13 12:21:36.899 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-06-13 12:25:58.335 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-06-13 12:27:59.099 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10002

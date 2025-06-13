@@ -70,3 +70,56 @@ Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
   "stderr": "fatal: bad revision 'refs/heads/master'\n"
 }
 2025-06-13 12:22:14.825 [info] > git check-ignore -v -z --stdin [2ms]
+2025-06-13 12:25:57.320 [info] > git add -A -- . [279ms]
+2025-06-13 12:25:58.002 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [675ms]
+2025-06-13 12:25:58.002 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-06-13 12:25:58.012 [info] > git config --get-all user.name [2ms]
+2025-06-13 12:25:58.029 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-13 12:25:58.031 [info] > git config --get commit.template [9ms]
+2025-06-13 12:25:58.032 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-06-13 12:25:58.032 [warning] [Git][getBranch] No such branch: master
+2025-06-13 12:25:58.096 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2025-06-13 12:26:00.106 [info] > git status -z -uall [2066ms] (cancelled)
+2025-06-13 12:26:02.829 [info] > git show --textconv :README-cloudshell.txt [32ms]
+2025-06-13 12:26:02.830 [info] > git show --textconv HEAD:README-cloudshell.txt [22ms]
+2025-06-13 12:26:02.831 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/leonardo_cavalcanti_136/README-cloudshell.txt.git?%7B%22path%22%3A%22%2Fhome%2Fleonardo_cavalcanti_136%2FREADME-cloudshell.txt%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-06-13 12:26:02.833 [info] > git ls-tree -l HEAD -- README-cloudshell.txt [5ms]
+2025-06-13 12:26:02.833 [info] fatal: Not a valid object name HEAD
+2025-06-13 12:26:02.834 [warning] [GitFileSystemProvider][stat] File not found - git:/home/leonardo_cavalcanti_136/README-cloudshell.txt.git?%7B%22path%22%3A%22%2Fhome%2Fleonardo_cavalcanti_136%2FREADME-cloudshell.txt%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-06-13 12:26:02.834 [info] > git ls-files --stage -- README-cloudshell.txt [18ms]
+2025-06-13 12:26:02.844 [info] > git cat-file -s 9fa5a74e750d98eb725eca4ca09ba01af2f5cd24 [3ms]
+2025-06-13 12:27:58.718 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [152ms]
+2025-06-13 12:27:58.736 [info] > git config --get commit.template [1ms]
+2025-06-13 12:27:58.771 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-13 12:27:58.775 [info] > git config --get commit.template [17ms]
+2025-06-13 12:27:58.775 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-06-13 12:27:58.834 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-06-13 12:27:59.063 [info] > git status -z -uall [273ms]
+2025-06-13 12:27:59.707 [info] > git check-ignore -v -z --stdin [47ms]
+2025-06-13 12:27:59.731 [info] > git config --get commit.template [7ms]
+2025-06-13 12:27:59.733 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-13 12:27:59.747 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-06-13 12:27:59.820 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [35ms]
+2025-06-13 12:27:59.949 [info] > git status -z -uall [190ms]
+2025-06-13 12:28:00.246 [info] > git check-ignore -v -z --stdin [26ms]
+2025-06-13 12:28:00.444 [info] > git ls-files --stage -- README-cloudshell.txt [9ms]
+2025-06-13 12:28:00.454 [info] > git cat-file -s 9fa5a74e750d98eb725eca4ca09ba01af2f5cd24 [2ms]
+2025-06-13 12:28:00.641 [info] > git show --textconv :README-cloudshell.txt [9ms]
+2025-06-13 12:28:01.482 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-13 12:28:01.483 [info] > git config --get commit.template [14ms]
+2025-06-13 12:28:01.484 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-06-13 12:28:01.543 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-06-13 12:28:01.638 [info] > git status -z -uall [145ms]
+2025-06-13 12:28:18.504 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [18822ms]

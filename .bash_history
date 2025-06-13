@@ -62,3 +62,6 @@ git add.
 git init 
 git add.
 git add .
+git config --global user.name "LeonardoPCavalcanti"
+git config --global user.email "leozinhopcavalcanti@hotmail.com"
+git config --global --list
