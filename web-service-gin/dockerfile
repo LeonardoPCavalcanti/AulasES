@@ -1,33 +1,38 @@
-# Use uma imagem base oficial do Go
-FROM golang:1.24-alpine AS builder
-
-# Define o diretório de trabalho dentro do contêiner
-WORKDIR /app
-
-# Copia o arquivo go.mod e go.sum para baixar as dependências
-COPY go.mod go.sum ./
-RUN go mod download
-
-# Copia o restante do código fonte
-COPY . .
-
-# Compila o aplicativo Go
-RUN go build -o main .
-
-# Use uma imagem base mais leve para a execução
-FROM alpine:latest
+# Etapa 1: Build
+FROM golang:1.20-alpine AS builder
 
 # Define o diretório de trabalho
 WORKDIR /app
 
-# Copia o binário compilado do estágio anterior
-COPY --from=builder /app/main .
+# Copia os arquivos de dependências primeiro (cache das dependências)
+COPY go.mod go.sum ./
+RUN go mod download
 
-# Expõe a porta que o aplicativo escuta
-EXPOSE 8080
+# Copia o restante do código para dentro do container
+COPY . .
 
-# Define o volume para persistir os logs
+# Compila o binário
+RUN go build -o aulasES .
+
+# Etapa 2: Imagem final para execução
+FROM alpine:latest
+
+# Instala dependências básicas (opcional, para logs e depuração)
+RUN apk --no-cache add ca-certificates
+
+WORKDIR /app
+
+# Copia o binário da etapa de build
+COPY --from=builder /app/aulasES .
+
+# Cria o diretório para logs se não existir
+RUN mkdir -p /app/my-data
+
+# Define o volume para persistência dos logs
 VOLUME /app/my-data
 
-# Comando para executar o aplicativo
-CMD ["./main"]
+# Expõe a porta que sua aplicação utiliza
+EXPOSE 8080
+
+# Comando padrão para executar
+CMD ["./aulasES"]
