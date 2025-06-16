@@ -1,14 +1,11 @@
-version: "3.9"
+version: '3.9'
 
 services:
   aulas-es-app:
     container_name: aulas-es-container
-    image: aulas-es
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     ports:
       - "8080:8080"
     volumes:
       - ./my-data:/app/my-data
-    restart: unless-stopped
+    restart: always
