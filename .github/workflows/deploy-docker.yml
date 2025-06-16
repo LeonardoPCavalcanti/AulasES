@@ -10,40 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do código
-        uses: actions/checkout@v3
+    - name: Checkout do código
+      uses: actions/checkout@v3
 
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+    - name: Copiar arquivos para o servidor
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source: "web-service-gin/*"
+        target: "/home/${{ secrets.SERVER_USER }}/aulasES"
 
-      - name: Build Docker image
-        run: docker build -t aulas-es .
-
-      - name: Save Docker image as tar
-        run: docker save aulas-es > aulas-es.tar
-
-      - name: Enviar imagem Docker para o servidor
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "aulas-es.tar"
-          target: "/home/${{ secrets.SERVER_USER }}/aulas-es"
-
-      - name: Executar comandos no servidor
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd /home/${{ secrets.SERVER_USER }}/aulas-es
-            docker load < aulas-es.tar
-            docker stop aulas-es-container || true
-            docker rm aulas-es-container || true
-            docker run -d -p 8080:8080 --name aulas-es-container aulas-es
+    - name: Rodar containers no servidor
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /home/${{ secrets.SERVER_USER }}/aulasES
+          docker compose down || true
+          docker compose up -d --build
