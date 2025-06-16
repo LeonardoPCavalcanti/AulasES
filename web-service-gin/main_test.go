@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"os"
-	"path/filepath"
 	"strings"
 	"testing"
 
@@ -146,6 +145,12 @@ func TestAlbumEndpoints(t *testing.T) {
 
 // TestLoggingMiddleware testa o middleware de logging.
 func TestLoggingMiddleware(t *testing.T) {
+	// Cria o diretório de logs, se não existir
+	err := os.MkdirAll("my-data", os.ModePerm)
+	if err != nil {
+		t.Fatalf("Erro ao criar o diretório my-data: %v", err)
+	}
+
 	// Cria um novo roteador Gin
 	router := gin.New()
 
@@ -170,24 +175,15 @@ func TestLoggingMiddleware(t *testing.T) {
 	}
 
 	// Verifica o conteúdo do arquivo de log
-	logDir := "logs"
-	files, err := os.ReadDir(logDir)
-	if err != nil {
-		t.Fatalf("Erro ao ler o diretório de logs: %v", err)
-	}
-
-	if len(files) != 1 {
-		t.Fatalf("Esperado 1 arquivo de log, recebido %d", len(files))
-	}
-
-	logFileName := filepath.Join(logDir, files[0].Name())
-	logFileContent, err := os.ReadFile(logFileName)
+	logFilePath := "my-data/logs.txt"
+	content, err := os.ReadFile(logFilePath)
 	if err != nil {
 		t.Fatalf("Erro ao ler o arquivo de log: %v", err)
 	}
 
-	expectedLogMessage := "[20" // Verifica o início do timestamp
-	if !strings.Contains(string(logFileContent), expectedLogMessage) {
-		t.Errorf("Arquivo de log não contém a mensagem esperada: %s", expectedLogMessage)
+	// Verifica se o log contém a URL chamada
+	expected := "/test"
+	if !strings.Contains(string(content), expected) {
+		t.Errorf("Log não contém a rota chamada: %s", expected)
 	}
 }
