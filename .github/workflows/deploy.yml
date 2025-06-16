@@ -2,14 +2,15 @@ name: Deploy Go App
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout do código
         uses: actions/checkout@v3
 
       - name: Set up Go
@@ -18,7 +19,7 @@ jobs:
           go-version: '1.20'
 
       - name: Build binary
-        run: go build -o myapp
+        run: go build -o aulasES
 
       - name: Copy binary to server
         uses: appleboy/scp-action@master
@@ -26,8 +27,8 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "myapp"
-          target: "/home/${{ secrets.SERVER_USER }}/app"
+          source: "aulasES"
+          target: "/home/${{ secrets.SERVER_USER }}/aulasES"
 
       - name: Run app on server
         uses: appleboy/ssh-action@master
@@ -36,6 +37,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            pkill myapp || true
-            cd /home/${{ secrets.SERVER_USER }}/app
-            nohup ./myapp > output.log 2>&1 &
+            pkill aulasES || true
+            cd /home/${{ secrets.SERVER_USER }}/aulasES
+            nohup ./aulasES > output.log 2>&1 &
