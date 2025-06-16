@@ -2,26 +2,24 @@ name: Deploy Go App via Binary
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./web-service-gin
-
     steps:
       - name: Checkout do código
         uses: actions/checkout@v3
 
-      - name: Instalar Go
+      - name: Set up Go
         uses: actions/setup-go@v4
         with:
           go-version: '1.20'
 
       - name: Build binary
+        working-directory: ./web-service-gin
         run: go build -o aulasES
 
       - name: Copiar binário para o servidor
@@ -30,10 +28,10 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "aulasES"
+          source: "web-service-gin/aulasES"
           target: "/home/${{ secrets.SERVER_USER }}/aulasES"
 
-      - name: Rodar binário no servidor
+      - name: Executar binário no servidor
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
