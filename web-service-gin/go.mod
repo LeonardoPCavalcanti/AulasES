@@ -1,6 +1,6 @@
 module example.com/web-service-gin
 
-go 1.24.3
+go 1.24
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
