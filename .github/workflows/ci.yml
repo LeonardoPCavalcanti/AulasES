@@ -2,28 +2,31 @@ name: Go CI
 
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
   pull_request:
-    branches: [main]
-  workflow_dispatch: # Permite rodar manual
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout do código
-      uses: actions/checkout@v3
+      - name: Checkout do código
+        uses: actions/checkout@v3
 
-    - name: Configurar Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.20'
+      - name: Instalar Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20' # Certifique-se que está compatível com o go.mod
 
-    - name: Instalar dependências
-      run: go mod tidy
-      working-directory: web-service-gin
+      - name: Instalar dependências
+        run: go mod tidy
 
-    - name: Rodar testes
-      run: go test ./...
-      working-directory: web-service-gin
+      - name: Criar diretório de logs
+        run: mkdir -p my-data
+
+      - name: Rodar testes
+        run: go test ./...
+
+      - name: Build do projeto
+        run: go build -o aulasES
