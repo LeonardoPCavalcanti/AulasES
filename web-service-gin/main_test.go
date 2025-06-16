@@ -17,9 +17,8 @@ import (
 // setupRouter configura o roteador Gin para os testes.
 func setupRouter() *gin.Engine {
 	router := gin.Default()
-	router.Use(loggingMiddleware()) // Adiciona o middleware de logging (assumindo que você quer testá-lo também)
+	router.Use(loggingMiddleware())
 
-	// Define as rotas de álbum com o middleware de autenticação
 	adminRoutes := router.Group("/albums")
 	adminRoutes.Use(authMiddleware("ADMIN"))
 	{
@@ -29,9 +28,31 @@ func setupRouter() *gin.Engine {
 	}
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumByID)
-	router.POST("/auth", authenticate) // Inclui o endpoint de autenticação para os testes
+	router.POST("/auth", authenticate)
+	router.GET("/logs", getLogs)
 
 	return router
+}
+
+// TestMain executa antes e depois de todos os testes.
+func TestMain(m *testing.M) {
+	// Setup antes de qualquer teste
+	cleanupLogs()
+
+	// Executa os testes
+	code := m.Run()
+
+	// Teardown depois dos testes
+	cleanupLogs()
+
+	// Encerra com o código de saída correto
+	os.Exit(code)
+}
+
+// cleanupLogs remove os arquivos de log antes e depois dos testes.
+func cleanupLogs() {
+	logDir := "my-data"
+	os.RemoveAll(logDir) // Remove o diretório e tudo dentro dele
 }
 
 // TestAlbumEndpoints testa os endpoints relacionados aos álbuns.
