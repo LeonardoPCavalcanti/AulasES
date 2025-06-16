@@ -2,46 +2,44 @@ name: Deploy Go App via Binary
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./web-service-gin
+
     steps:
-    - name: Checkout do código
-      uses: actions/checkout@v3
+      - name: Checkout do código
+        uses: actions/checkout@v3
 
-    - name: Configurar Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.20'
+      - name: Instalar Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
 
-    - name: Instalar dependências
-      run: go mod tidy
-      working-directory: web-service-gin
+      - name: Build binary
+        run: go build -o aulasES
 
-    - name: Build do binário
-      run: go build -o aulasES
-      working-directory: web-service-gin
+      - name: Copiar binário para o servidor
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "aulasES"
+          target: "/home/${{ secrets.SERVER_USER }}/aulasES"
 
-    - name: Copiar binário para o servidor
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.SERVER_IP }}
-        username: ${{ secrets.SERVER_USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "web-service-gin/aulasES"
-        target: "/home/${{ secrets.SERVER_USER }}/aulasES"
-
-    - name: Rodar aplicação no servidor
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SERVER_IP }}
-        username: ${{ secrets.SERVER_USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          pkill aulasES || true
-          cd /home/${{ secrets.SERVER_USER }}/aulasES
-          nohup ./aulasES > output.log 2>&1 &
+      - name: Rodar binário no servidor
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            pkill aulasES || true
+            cd /home/${{ secrets.SERVER_USER }}/aulasES
+            nohup ./aulasES > output.log 2>&1 &
