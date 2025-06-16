@@ -146,27 +146,28 @@ func TestAlbumEndpoints(t *testing.T) {
 
 // TestLoggingMiddleware testa o middleware de logging.
 func TestLoggingMiddleware(t *testing.T) {
-	// Cria o roteador
+	// Cria o roteador com o middleware de logging
 	router := gin.New()
 	router.Use(loggingMiddleware())
 
-	// Define uma rota de teste
-	router.GET("/test", func(c *gin.Context) {
+	// Define uma rota simples para o teste
+	router.GET("/health", func(c *gin.Context) {
 		c.String(http.StatusOK, "OK")
 	})
 
-	// Remove o log anterior, se existir
-	logFilePath := "my-data/logs.txt"
-	os.Remove(logFilePath)
-
-	// Garante que o diretório existe
-	err := os.MkdirAll("my-data", os.ModePerm)
+	// Garante que o diretório de log existe
+	logDir := "my-data"
+	logFilePath := logDir + "/logs.txt"
+	err := os.MkdirAll(logDir, os.ModePerm)
 	if err != nil {
 		t.Fatalf("Erro ao criar diretório de logs: %v", err)
 	}
 
+	// Remove qualquer log anterior
+	_ = os.Remove(logFilePath)
+
 	// Faz uma requisição para gerar o log
-	req, _ := http.NewRequest("GET", "/test", nil)
+	req, _ := http.NewRequest("GET", "/health", nil)
 	resp := httptest.NewRecorder()
 	router.ServeHTTP(resp, req)
 
@@ -175,7 +176,7 @@ func TestLoggingMiddleware(t *testing.T) {
 		t.Fatalf("Código de status esperado 200, recebido %d", resp.Code)
 	}
 
-	// Aguarda um pequeno tempo para garantir que o log seja gravado
+	// Aguarda brevemente para garantir que o log seja gravado
 	time.Sleep(100 * time.Millisecond)
 
 	// Lê o arquivo de log
@@ -185,7 +186,7 @@ func TestLoggingMiddleware(t *testing.T) {
 	}
 
 	// Verifica se o log contém a rota chamada
-	if !strings.Contains(string(logContent), "/test") {
-		t.Errorf("Log não contém a rota chamada: /test")
+	if !strings.Contains(string(logContent), "/health") {
+		t.Errorf("Log não contém a rota chamada: /health. Conteúdo atual do log: %s", string(logContent))
 	}
 }
