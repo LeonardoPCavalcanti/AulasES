@@ -7,17 +7,20 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout do código
         uses: actions/checkout@v3
 
-      - name: Set up Go
+      - name: Configurar Go
         uses: actions/setup-go@v4
         with:
           go-version: '1.20'
 
-      - name: Run tests
-        run: go test ./...
+      - name: Instalar dependências
+        run: go mod tidy
+
+      - name: Rodar testes
+        run: go test -v ./...
