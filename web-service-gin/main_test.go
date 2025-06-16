@@ -8,6 +8,7 @@ import (
 	"os"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
@@ -145,16 +146,8 @@ func TestAlbumEndpoints(t *testing.T) {
 
 // TestLoggingMiddleware testa o middleware de logging.
 func TestLoggingMiddleware(t *testing.T) {
-	// Cria o diretório de logs, se não existir
-	err := os.MkdirAll("my-data", os.ModePerm)
-	if err != nil {
-		t.Fatalf("Erro ao criar o diretório my-data: %v", err)
-	}
-
-	// Cria um novo roteador Gin
+	// Cria o roteador
 	router := gin.New()
-
-	// Usa o middleware de logging
 	router.Use(loggingMiddleware())
 
 	// Define uma rota de teste
@@ -162,28 +155,37 @@ func TestLoggingMiddleware(t *testing.T) {
 		c.String(http.StatusOK, "OK")
 	})
 
-	// Cria uma requisição de teste e um gravador de resposta
-	req, _ := http.NewRequest("GET", "/test", nil)
-	resp := httptest.NewRecorder()
+	// Remove o log anterior, se existir
+	logFilePath := "my-data/logs.txt"
+	os.Remove(logFilePath)
 
-	// Executa a requisição
-	router.ServeHTTP(resp, req)
-
-	// Verifica o código de status da resposta
-	if resp.Code != http.StatusOK {
-		t.Errorf("Código de status esperado %d, recebido %d", http.StatusOK, resp.Code)
+	// Garante que o diretório existe
+	err := os.MkdirAll("my-data", os.ModePerm)
+	if err != nil {
+		t.Fatalf("Erro ao criar diretório de logs: %v", err)
 	}
 
-	// Verifica o conteúdo do arquivo de log
-	logFilePath := "my-data/logs.txt"
-	content, err := os.ReadFile(logFilePath)
+	// Faz uma requisição para gerar o log
+	req, _ := http.NewRequest("GET", "/test", nil)
+	resp := httptest.NewRecorder()
+	router.ServeHTTP(resp, req)
+
+	// Verifica se a resposta foi OK
+	if resp.Code != http.StatusOK {
+		t.Fatalf("Código de status esperado 200, recebido %d", resp.Code)
+	}
+
+	// Aguarda um pequeno tempo para garantir que o log seja gravado
+	time.Sleep(100 * time.Millisecond)
+
+	// Lê o arquivo de log
+	logContent, err := os.ReadFile(logFilePath)
 	if err != nil {
 		t.Fatalf("Erro ao ler o arquivo de log: %v", err)
 	}
 
-	// Verifica se o log contém a URL chamada
-	expected := "/test"
-	if !strings.Contains(string(content), expected) {
-		t.Errorf("Log não contém a rota chamada: %s", expected)
+	// Verifica se o log contém a rota chamada
+	if !strings.Contains(string(logContent), "/test") {
+		t.Errorf("Log não contém a rota chamada: /test")
 	}
 }
