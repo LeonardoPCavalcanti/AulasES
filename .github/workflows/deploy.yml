@@ -3,11 +3,12 @@ name: Deploy Go App
 on:
   push:
     branches:
-      - main  # Or your production branch, e.g., main or master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -15,25 +16,27 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: "1.20"  # Use the Go version your project requires
+          go-version: '1.20'
 
       - name: Build
         run: go build -o myapp
 
-      - name: Deploy to Server
+      - name: Upload to Server
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.SERVER_IP }}  # Replace with your server IP/hostname
-          username: ${{ secrets.SERVER_USER }}  # Replace with your server username
-          key: ${{ secrets.SSH_PRIVATE_KEY }}  # Replace with your SSH private key
-          source: "myapp"  # Only send the binary
-          target: "/home/your_user/app"  # Replace with your server directory
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "myapp"
+          target: "/home/${{ secrets.SERVER_USER }}/app"
 
-      - name: Run on Server
+      - name: Run App on Server
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            /home/your_user/app/myapp  # Execute the app on the server
+            pkill myapp || true
+            cd /home/${{ secrets.SERVER_USER }}/app
+            nohup ./myapp > output.log 2>&1 &
