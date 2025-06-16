@@ -150,7 +150,7 @@ func TestLoggingMiddleware(t *testing.T) {
 	router := gin.New()
 	router.Use(loggingMiddleware())
 
-	// Define uma rota simples para o teste
+	// Define uma rota simples para teste
 	router.GET("/health", func(c *gin.Context) {
 		c.String(http.StatusOK, "OK")
 	})
@@ -185,8 +185,10 @@ func TestLoggingMiddleware(t *testing.T) {
 		t.Fatalf("Erro ao ler o arquivo de log: %v", err)
 	}
 
-	// Verifica se o log contém a rota chamada
-	if !strings.Contains(string(logContent), "/health") {
-		t.Errorf("Log não contém a rota chamada: /health. Conteúdo atual do log: %s", string(logContent))
+	// Verifica se o log contém os elementos esperados
+	if !strings.Contains(string(logContent), "GET") ||
+		!strings.Contains(string(logContent), "/health") ||
+		!strings.Contains(string(logContent), "200") {
+		t.Errorf("Log não contém os dados esperados. Conteúdo atual: %s", string(logContent))
 	}
 }
