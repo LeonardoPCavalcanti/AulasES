@@ -2,10 +2,10 @@ version: '3.8'
 
 services:
   aulas-es-app:
-    build: .
+    build:
+      context: .
     ports:
       - "8080:8080"
-    container_name: aulas-es-container
     volumes:
       - ./my-data:/app/my-data
-    restart: always
+    restart: unless-stopped

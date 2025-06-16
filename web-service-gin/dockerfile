@@ -1,38 +1,34 @@
-# Etapa 1: Build
+# Etapa 1: Build da aplicação
 FROM golang:1.20-alpine AS builder
 
-# Define o diretório de trabalho
 WORKDIR /app
 
-# Copia os arquivos de dependências primeiro (cache das dependências)
+# Copia os arquivos de dependências
 COPY go.mod go.sum ./
 RUN go mod download
 
-# Copia o restante do código para dentro do container
+# Copia todo o código
 COPY . .
 
 # Compila o binário
 RUN go build -o aulasES .
 
-# Etapa 2: Imagem final para execução
+# Etapa 2: Imagem mínima
 FROM alpine:latest
-
-# Instala dependências básicas (opcional, para logs e depuração)
-RUN apk --no-cache add ca-certificates
 
 WORKDIR /app
 
-# Copia o binário da etapa de build
+# Instala certificados para HTTPS se necessário
+RUN apk --no-cache add ca-certificates
+
+# Copia o binário gerado
 COPY --from=builder /app/aulasES .
 
-# Cria o diretório para logs se não existir
-RUN mkdir -p /app/my-data
-
-# Define o volume para persistência dos logs
+# Volume para logs
 VOLUME /app/my-data
 
-# Expõe a porta que sua aplicação utiliza
+# Expõe a porta
 EXPOSE 8080
 
-# Comando padrão para executar
+# Executa a aplicação
 CMD ["./aulasES"]
