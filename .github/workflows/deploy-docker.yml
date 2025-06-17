@@ -1,4 +1,4 @@
-name: Deploy Go App via Docker
+name: Deploy Docker to VPS
 
 on:
   push:
@@ -10,31 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do código
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build Docker image
-        run: docker build -t aulas-es-app ./web-service-gin
-
-      - name: Enviar imagem Docker para servidor
+      - name: Copy Docker files to VPS
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "./web-service-gin/docker-compose.yml"
+          source: "./web-service-gin/*"
           target: "/home/${{ secrets.SERVER_USER }}/aulasES"
 
-      - name: Enviar Dockerfile
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "./web-service-gin/dockerfile"
-          target: "/home/${{ secrets.SERVER_USER }}/aulasES"
-
-      - name: Deploy no servidor
+      - name: Run Docker Compose on VPS
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
@@ -42,5 +30,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/${{ secrets.SERVER_USER }}/aulasES
-            docker-compose down
-            docker-compose up -d --build
+            docker compose down
+            docker compose up -d --build
