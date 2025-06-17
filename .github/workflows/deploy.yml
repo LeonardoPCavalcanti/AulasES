@@ -25,19 +25,21 @@ jobs:
       - name: Copiar binário para o servidor
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
+          host: 192.168.0.205
+          port: 3022
+          username: leo
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "web-service-gin/aulasES"
-          target: "/home/${{ secrets.SERVER_USER }}/aulasES"
+          target: "/home/leo/aulasES"
 
       - name: Executar binário no servidor
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
+          host: 192.168.0.205
+          port: 3022
+          username: leo
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             pkill aulasES || true
-            cd /home/${{ secrets.SERVER_USER }}/aulasES
+            cd /home/leo/aulasES
             nohup ./aulasES > output.log 2>&1 &
